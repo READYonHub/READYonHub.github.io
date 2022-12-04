@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>C++ Jegyzet</title>
+    <link rel="stylesheet" href="css1.css" />
+</head>
+<body>
+    <div class="tartalom">
+        <h1 id="h111">C++ Jegyzet</h1>
+
+        <p>
+            Itt a saját magamnak készített gyors jegyzet található, de bárki más számára is hasznos lehet, mert könnyen érthető,
+            mintával ellátott kódrészletek vannak konyha nyelven megfogalmazva.
+        </p>
+        <!-- itt kezdődik-->
+        <div>
+            <h3>Algoritmus</h3>
+            <kod id="minta_kod">
+                <sarga style="background-color:yellow;"><strong>Algoritmusnak nevezzük </strong></sarga>azoknak a lépéseknek a sorozatát, amik egy felmerülő feladat megoldására alkalmasak.
+                <br />
+                <p style="text-indent:unset;">Például : ételreceptek, lépésről lépésre (step by step) típusú összeszerelési útmutatók </p>
+                <p style="text-indent:unset;">Az algoritmust leíró lépéseket <strong>utasításoknak nevezzük.</strong></p>
+            </kod>
+            <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h3>Algoritmust leíró eszközök</h3>
+                <kod id="minta_kod">
+                    <p style="background-color:yellow; border-radius:15px;">Az algoritmusokat programozási nyelvtől függetlenül kell megfogalmazni.</p>
+                    <ul>
+                        <!--ide új oldal és linkelve magyarázat:-->
+                        <li><strong>Mondatos leírás :</strong> amikor az algoritmust a legkevésbé formális módon mondatokkal fogalmazzunk meg.</li>
+                        <br />
+                        <li><strong>Folyamatábra :</strong> ezt hasznáhatjuk rövidebb algoritmusok szemléltetésére.</li>
+                        <br />
+                        <li><strong>Mondatszerű leírás (vagy pszeudokód)</strong> : amikor előre rögzitjük a felhasználható mondatelemeket.</li>
+                        <br />
+                        <li><strong>Stuktogram : </strong></li>
+                        <br />
+                        <li><strong>Jackson-ábra :</strong></li>
+                    </ul>
+                </kod>
+            </div>
+            <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Hibák</h2>
+                <h4>Szintaktikai hibák</h4>
+                <kod id="minta_kod">
+                    <p>
+                        Alaki vagy nyelvi hibáról beszélünk, ha a fordítóprogram nem fogadja el a kódot.
+                        <ul>
+                            <li>Elgépelés : kihagyunk egy betűt</li>
+                            <li>Elfelejtjük a ; az utasítás végére</li>
+                            <li>nincs meg valamelyik nyitó vagy zárójel</li>
+                        </ul>
+                    </p>
+                </kod>
+
+                <h4>Szemantikai hibák</h4>
+                <kod id="minta_kod">
+                    <p>
+                        Amikor tartalmi hiba esetén a program lefodítható, de nem azt csinálja, amit elvárunk tőle.                      <ul>
+                            <li>Teszteléssel deríthetjük fel őket.</li>
+                        </ul>
+                    </p>
+                </kod>
+            </div>  <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Változók</h2>
+                <h4>Változó fogalma</h4>
+                <kod id="minta_kod">
+                    <p>
+                        A RAM egy része amire, névvel hivatkozunk.
+                    </p>
+                </kod>
+
+                <h4>Változónév</h4>
+                <kod id="minta_kod">
+                    <p>
+                        <ul>
+                            <li>Nem tartalmazhat pontot, veszőt, pontosveszőt</li>
+                            <li>Nem állhat több szóból</li>
+                            <li>Nem egyezhet meg a programnyelv utasításaival, kulcsszavaival</li>
+                        </ul>
+                    </p>
+                </kod>
+            </div>  <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Típusok, dekrarációk</h2>
+                <h4>A leggyakrabban használt változók dekralálása</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        int egeszTipusu;<br />
+                        string karakterlancTipusu;<br />
+                        bool logikaiTipusu;<br />
+                        char karakterTipusu;<br />
+                        double valosTipusu;<br />
+                    </p>
+                </kod>
+
+                <h4>Értékadás mondaszerűleírással</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px;">
+                        k := 1<br />
+                        És így olvassuk ki, hogy : k legyen egyenlő 1.<br />
+                        k := i<br />
+                        A k értéke a továbbiakban egyenlő az i értékével<br />
+                    </p>
+                </kod>
+                <h4>Értékadás kódolásban</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left: 10px; text-indent: 0px; padding: 1px;">
+                        int i = 1111;<br />
+                        string lanc = "READY!!!_YouTube";<br />
+                        bool true_or_false = true;<br />
+                        char egyKarakter = 'K'; <br />
+                        double valosSzam = 3.3333;
+                    </p>
+                </kod>
+                <h4>Konstans</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left: 10px; text-indent: 0px; padding: 1px;">
+                        const int vf = 2160;
+                    </p>
+                </kod>
+            </div>  <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Adat be- és kivitel a konzolablakban</h2>
+                <h4>Változó kiíratása</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        int egeszTipusu = 111;<br />
+                        cout << egeszTipusu;
+                    </p>
+                </kod>
+                <h4>Adatbekérés változóba</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        int egeszTipusu;<br />
+                        cin >> egeszTipusu;
+                    </p>
+                </kod>
+            </div> <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Egészek</h2>
+                <h4>Alapműveletek</h4>
+                <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                    A példában : a :=7, b:= 3
+                    <table id="tabla1">
+                        <tr>
+                            <th>Művelet</th>
+                            <th>Algoritmus</th>
+                            <th>C++ nyelveken</th>
+                            <th>Eredmény</th>
+                        </tr>
+                        <tr>
+                            <td>Összeadás</td>
+                            <td>c := a + b</td>
+                            <td>c = a + b</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Kivonás</td>
+                            <td>c := a - b</td>
+                            <td>c = a - b</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Szorzás</td>
+                            <td>c := a * b</td>
+                            <td>c = a * b</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Osztás</td>
+                            <td>c := a div b</td>
+                            <td>c = a / b</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Maradékos osztás</td>
+                            <td>c := a mod b</td>
+                            <td>c = a % b</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </p>
+                <h4>Adatbekérés változóba</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        int egeszTipusu;<br />
+                        cin >> egeszTipusu;
+                    </p>
+                </kod>
+                <h4>Inkrementálás és dekrementálás</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        <table id="tabla1">
+                            <tr>
+                                <th>Elnevezés</th>
+                                <th>Értékadás</th>
+                                <th>C nyelveken röviditve</th>
+                            </tr>
+                            <tr>
+                                <td>Inkrementálás</td>
+                                <td>c = c + 1;</td>
+                                <td>c++;</td>
+                            </tr>
+                            <tr>
+                                <td>dekrementálás</td>
+                                <td>c = c - 1;</td>
+                                <td>c--;</td>
+                            </tr>
+                        </table>
+                    </p>
+                </kod>
+                <h4>Véletlen számok</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        #include <a><</a>iostream><br />
+                        #include <a><</a>cstdlib><br />
+                        #include <a><</a>ctime><br /><br />
+                        using namespace std;<br /><br />
+                        int main() {<br /></br/>
+                        srand(time(NULL));<br />
+                        int a = rand();<br />
+                        int b = rand() %90 + 1; <br />
+                        <br /><br />
+                        Az a változó értéke az int tartományon belüli bármelyik szám.<br /> A b változó értéke 1-től 90-ig tartomány.
+                    </p>
+                </kod>
+            </div> <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Valós számok</h2>
+                <h4>Matematikai függvények</h4>
+                <kod id="minta_kod">
+                    <p>
+                        <table id="tabla1">
+                            <tr>
+                                <th>Elnevezés</th>
+                                <th>C++ kódban</th>
+                            </tr>
+                            <tr>
+                                <td>négyzetgyökvonás</td>
+                                <td>c = sqrt(2.25);</td>
+                            </tr>
+                            <tr>
+                                <td>hatványozás(alap:2, kutevő:3)</td>
+                                <td>c = pow(2,3);</td>
+                            </tr>
+                            <tr>
+                                <td>tízes logaritmus</td>
+                                <td>c = log10(100);</td>
+                            </tr>
+                            <tr>
+                                <td>kerekítés a kisebb egészre</td>
+                                <td>c = floor(2.25);</td>
+                            </tr>
+                            <tr>
+                                <td>kerekítés a nagyobb egészre</td>
+                                <td>c = ceil(2.25);</td>
+                            </tr>
+                            <tr>
+                                <td>kerekítés egészre</td>
+                                <td>c = round(2.25);</td>
+                            </tr>
+                            <tr>
+                                <td>abszolútérték</td>
+                                <td>c = abs(-2.25);</td>
+                            </tr>
+                            <tr>
+                                <td>szinusz</td>
+                                <td>c = sin(3.14/2);</td>
+                            </tr>
+                            <tr>
+                                <td>inverz szinusz</td>
+                                <td>c = asin(1);</td>
+                            </tr>
+                        </table>
+                    </p>
+                </kod>
+
+                <h4>Véletlen valós számok</h4>
+                <kod id="minta_kod">
+                    <p style="padding:1%; text-indent:0%;">
+                        srand(time(NULL));<br /><br />
+                        double a = (double)rand / ((double)RAND_MAX + 1);<br />
+                    </p>
+                </kod>
+                <h4>A pontosság kijelzése</h4>
+                <p>
+                    A <strong><u>fixed</u></strong>  utasítást elég a programban egyszer kiadni,
+                    mert visszavonásíg érvényes. A <strong><u>setprecision(x)</u></strong>a zárójellek közé
+                    paraméterként kell megadni a megjelenítendő tizedes jegyek számát
+                </p>
+                <p>A <strong><u>fixed</u></strong> és <strong><u>setprecision</u></strong> használatához csatolni kell az <strong><u>iomanip</u></strong> függvénykönyvtárat.</p>
+                <kod id="minta_kod">
+                    <p style="padding:1%; text-indent:0%;">
+                        #include <a><</a>iostream></iostream><br />
+                        #include <a><</a>iomanip><br />
+                        <br />
+                        using namaspace std;<br />
+                        <br />
+                        int main()<br />{</br></br>
+
+                        double q = 3.14;<br />
+                        <br />
+                        cout << fixed << setprecision(0) << q << endl;<br />
+                        cout << setprecision(1) << q << endl;<br />
+                        cout << setprecision(3) << q << endl;<br />
+                        }<br />
+                    </p>
+                </kod>
+            </div>  <!-- itt végződik-->
+            <!-- itt kezdődik-->
+            <div>
+                <h2>Tömbök</h2>
+                <p>A tömbök névvel és sorszámmal ellátott változók.</p>
+                <h4>Egy dimenziós tömb</h4>
+                <p>Ha a tömb elemre hivatkozáskor egy indexet használunk, akkor egy dimenziós (vektorról) beszélünk.</p>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        1) int het[7];<br />
+                        2) het[6] = 0;<br />
+                        3) string nap[3] = {"hétfő", "kedd", "szerda"};<br />
+                        4) cout << nap[0] << endl;<br />
+                        5) cout << het[6] << endl;<br />
+                        6) cout << nap[het[6]];<br />
+                    </p>
+                </kod>
+                <ol>
+                    <li> soranban egy egész típusú, 7 elemű tömböt dekralálunk.</li>
+                    <li> sorban az előzőleg dekrarált tömb utolsó elemét megadjuk, 0 lesz az értéke.</li>
+                    <li> sorban láthatunk példát arra, hogyan kell dekrarációkor kezdőértéket adni a tömbelemeknek.</li>
+                    <li> sorban kiíratjuk a nap tömb első elemét, ami 0. indexű: hétfő.</li>
+                    <li> soran kiíratjuk a het tömb utolsó elemét, ami azért nem a 7-es mert a 7 elemű tömbindexelése 0-tól 6-ig tart. A kiírt elem: 0.</li>
+                    <li> sorban arra látunk példát, hogy az egyik tömb (nap) indexe lehet egy másik tömb (het) eleme. A kiírt elem: hétfő.</li>
+                </ol>
+                <h4>Két dimenziós tömb</h4>
+                <p>
+                    Ha az adataink táblázatos elrendezésüek,
+                    azaz olyanok, mint egy többoszlopos és többsoros fiókos szekrény,
+                    tárolásukra kétdimenziós tömböt (mátrixot) alkalmazunk.
+                </p>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        int kep[100][50];<br />
+                        kep[0][49] = 62; <br />
+                        int tabla[3][3] = { { 0, 1, 2 }, { 2, 1, 1 }, { 0, 2, 1 } }; <br />
+                        char figura[3] = { '.', 'o', 'x'};<br />
+                        cout << kep[0][49] << endl;<br />
+                        cout << tabla[2][1] << endl;<br />
+                        cout << figura[tabla[2] [1]];<br />
+                    </p>
+                </kod>
+                <ol>
+                    <li> sorban dekrarálunk egy 100 soros és 50 oszlops egész típusú tömböt.</li>
+                    <li> sorban az előzőleg dekralált tömb 1. sorámak (0.index), utolsó oszlopában (49.index) található elemnek a 62 értéket adjuk </li>
+                    <li> - 5. sorban értékadás. </li>
+                </ol>
+                <h4>Asszociatív tómb</h4>
+                <kod id="minta_kod">
+                    <p style=" margin-left:10px; text-indent:0px; padding:1px;" ;>
+                        #>inculde <a><</a>map><br />
+                        ..<br />
+                        map <string, int> rangsor<br />
+                        rangsor["Lajos"] = 1;<br />
+                        map <char, int> bsz;<br />
+                        bsz['A'] = 0;<br />
+                        bsz['B'] = 1;<br />
+                        bsz['C'] = 2;<br />
+                        cout << rangsor["Lajos"] << endl;<br />
+                        cout << bsz['C'] *10;<br />
+                    </p>
+                </kod>
+                <p>Eredmény : 1 és 20.</p>
+            </div> <!-- itt végződik-->
+
+        </div>
+        </div>
+</body>
+</html>

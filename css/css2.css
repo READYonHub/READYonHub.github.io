@@ -1,0 +1,22 @@
+﻿body
+{
+}
+
+.jelenleg:hover {
+    color: ghostwhite;
+    width: 100%;
+    border-radius: 6px;
+    
+}
+#semmi{
+    text-decoration:none;
+    padding:0;
+    margin:0;
+    border:0;
+    border:none;
+    text-decoration-line:none;
+}
+    #semmi:hover {
+        color: white;
+        background-color:black;
+    }

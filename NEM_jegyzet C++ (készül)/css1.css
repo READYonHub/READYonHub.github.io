@@ -1,0 +1,55 @@
+﻿body 
+    {
+    }
+#minta_kod {
+    overflow: auto;
+    word-wrap: normal;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0.5em #ccc;
+    padding: 0.7em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: table; /*ezzel lesz margótól margóig kinagyittva a minta kód*/
+    padding:3%;
+}
+#h111{
+    color:green;
+    text-align:center;
+    text-shadow:0px 0.5px black; 
+}
+.tartalom {
+    margin: 0 30% 0 20%;
+    border: 0 1px solid gray 0 1px solid gray;
+    text-align:left;
+    padding:10px 5% 0 5%;
+}
+p{
+    text-indent:5%;
+    padding-bottom:10px;
+}
+#tabla1 {
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+    border-collapse:collapse;
+    border:groove;
+    padding:3%;
+    border:1px solid black;
+}
+td  {
+    border: groove;
+    padding: 3%;
+    border: 1px solid black;
+}
+tr {
+    border: groove;
+    padding: 3%;
+    border: 1px solid black;
+}
+th {
+    border: groove;
+    padding: 3%;
+    border: 1px solid black;
+}
