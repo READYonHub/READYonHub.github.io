@@ -3,7 +3,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   margin: 0;
 }
 
@@ -19,38 +18,45 @@ h1 {
 /* Typewriter effect 1 */
 @keyframes typing {
   0.0000%, 27.3488% { content: ""; }
-  1.1395%, 26.2093% { content: "d"; }
-  2.2791%, 25.0698% { content: "de"; }
-  3.4186%, 23.9302% { content: "dev"; }
-  4.5581%, 22.7907% { content: "deve"; }
-  5.6977%, 21.6512% { content: "devel"; }
-  6.8372%, 20.5116% { content: "develo"; }
-  7.9767%, 19.3721% { content: "develop"; }
-  9.1163%, 18.2326% { content: "develope"; }
-  10.2558%, 17.0930% { content: "developer"; }
+  1.1395%, 26.2093% { content: "N"; }
+  2.2791%, 25.0698% { content: "Ne"; }
+  3.4186%, 23.9302% { content: "New"; }
+  4.5581%, 22.7907% { content: "New "; }
+  5.6977%, 21.6512% { content: "New Y"; }
+  6.8372%, 20.5116% { content: "New Ye"; }
+  7.9767%, 19.3721% { content: "New Yea"; }
+  9.1163%, 18.2326% { content: "New Year"; }
 
   30.7674%, 51.2791% { content: ""; }
-  31.9070%, 50.1395% { content: "w"; }
-  33.0465%, 49.0000% { content: "wr"; }
-  34.1860%, 47.8605% { content: "wri"; }
-  35.3256%, 46.7209% { content: "writ"; }
-  36.4651%, 45.5814% { content: "write"; }
-  37.6047%, 44.4419% { content: "writer"; }
+  31.9070%, 50.1395% { content: "N"; }
+  33.0465%, 49.0000% { content: "Ne"; }
+  34.1860%, 47.8605% { content: "New"; }
+  35.3256%, 46.7209% { content: "New "; }
+  36.4651%, 45.5814% { content: "New Y"; }
+  37.6047%, 44.4419% { content: "New Ye"; }
+  38.6047%, 43.4419% { content: "New Yea"; }
+  39.6047%, 42.4419% { content: "New Year"; }
+
 
   54.6977%, 75.2093% { content: ""; }
-  55.8372%, 74.0698% { content: "r"; }
-  56.9767%, 72.9302% { content: "re"; }
-  58.1163%, 71.7907% { content: "rea"; }
-  59.2558%, 70.6512% { content: "read"; }
-  60.3953%, 69.5116% { content: "reade"; }
-  61.5349%, 68.3721% { content: "reader"; }
+  55.8372%, 74.0698% { content: "N"; }
+  56.9767%, 72.9302% { content: "Ne"; }
+  58.1163%, 71.7907% { content: "New"; }
+  59.2558%, 70.6512% { content: "New "; }
+  60.3953%, 69.5116% { content: "New Y"; }
+  61.5349%, 68.3721% { content: "New Ye"; }
+  62.5349%, 67.3721% { content: "New Yea"; }
+  63.5349%, 66.3721% { content: "New Year"; }
 
   78.6279%, 96.8605% { content: ""; }
-  79.7674%, 95.7209% { content: "h"; }
-  80.9070%, 94.5814% { content: "hu"; }
-  82.0465%, 93.4419% { content: "hum"; }
-  83.1860%, 92.3023% { content: "huma"; }
-  84.3256%, 91.1628% { content: "human"; }
+  79.7674%, 95.7209% { content: "N"; }
+  80.9070%, 94.5814% { content: "Ne"; }
+  82.0465%, 93.4419% { content: "New"; }
+  83.1860%, 92.3023% { content: "New "; }
+  84.3256%, 91.1628% { content: "New Y"; }
+  85.3256%, 90.1628% { content: "New Ye"; }
+  86.3256%, 89.1628% { content: "New Yea"; }
+  87.3256%, 88.1628% { content: "New Year"; }
 }
 
 @keyframes blink {
@@ -88,14 +94,31 @@ h1 {
   }
   
   @keyframes sequencePopup {
-    0%, 100% { content: "developer"; }
-    25% { content: "writer"; }
-    50% { content: "reader"; }
-    75% { content: "human"; }
+    0%, 100% { content: "New Year"; }
   }
 
   .typewriter::before {
-    content: "developer";
+    content: "New Year";
     animation: sequencePopup 12s linear infinite;
   }
+}
+.tartalom2 {
+  text-align:justify;
+  text-indent: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.tartalom2 h2{
+  color: crimson;
+  font-weight: bold;
+}
+.tartalom2 p {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+#tovabb-link {
+  text-decoration: none;
+  color: white;
 }
