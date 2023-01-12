@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+<title>6.tétel</title>
+<style>
+    body{
+        font-size:16px;
+        margin:0;
+        padding:0;
+    }
+    h1{
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+</style>
+</head>
+<body style="background-color: #2E8B57; ">
+    <div style="background-color: white; margin: 5% 20% 0 20%; text-indent: 5%; padding:0 3% 3% 3%;">
+        <h1>6. tétel					Access Lists (Hozzáférési listák)</h1>
+
+        <p title="Hálózati rendszermérnök vagyok egy routereket gyártó cégnél. Felkértek, hogy tartsak szakmai előadást a hozzáférési listákról kezdő szinten a kiskereskedők kereskedői számára. (viszonteladók kereskedőinek).">I’m a network system engineer of a company which produces routers. I was asked to perform a professional presentation about Access-lists at beginner’s level to the traders of retailers. (viszonteladók kereskedőinek).</p>
+        <p title="Az Internet széles körben nyitott, alacsony szintű biztonsággal működik. Több millió felhasználó van, és a biztonság nagyon fontossá vált. A vállalatok biztonságossá teszik hálózataikat, hogy megakadályozzák az ellenőrizetlen vagy kéretlen hozzáférést a magánhálózataikhoz kívülről. Biztonsági megfontolásból (biztonsági megfontolásból) nagyon fontos a hozzáférési listák alkalmazása. A legtöbb hálózattervező tűzfalat használ a hálózat biztonságának és a jogosulatlan felhasználók elleni védelmére.">
+            The Internet is wide open, operating with a low level of security. There are millions of users and security has become very important. Companies secure their networks to prevent uncontrolled or unasked access to their private networks from the outside. From security consideration (biztonsági megfontolásból) it is very important to apply access lists. Most network designers use firewall to protect the security of the network and from the unauthorized users.
+        </p>
+        <p title="Egy hozzáférési lista szabályozza (szabályozza) a forgalmat a csomagok engedélyezésére vagy tiltására. A kapacitás növelése érdekében korlátozza a hálózati forgalmat (növelje a teljesítményt). Szűri a forgalmat, engedélyezi vagy letiltja, ha e-mailről vagy Telnetről van szó. Ezenkívül engedélyezi vagy megtagadja a hálózati szolgáltatások elérését a gazdagépek számára. Egy egyszerű tűzfalat is beállíthatunk egy Cisco útválasztón. Az Access Control List (ACL) szabályai biztosítják az alapvető hálózati forgalom szűrést. A Cisco útválasztók ACL-eket használnak a hálózati forgalom engedélyezésére vagy letiltására. Az ACL-ek hatékony eszközök a bejövő és kimenő hálózati forgalom szabályozására. Minden felügyelt protokollhoz hozzárendelhetők, pl. IP, IPv6 vagy IPx. Az ACL használatának fő oka a biztonságos hálózat kiépítése.">
+            An access list regulates (szabályozza) the traffic to permit or deny packets. It limits the network traffic in order to increase the capacity (növelje a teljesítményt). It filters the traffic, permits or denies if it is an e-mail or Telnet. It also permits or denies accessing the network services for the hosts. We can also configure a simple firewall on a Cisco router. The rules of Access Control Lists (ACL) ensure the basic network traffic filtering. Cisco routers use ACLs to permit or deny the network traffic. ACLs are powerful tools to control inbound and outbound network traffic. They can be assigned to all managed protocols, e.g. IP, IPv6 or IPx. The main reason for using ACLs is to build a secure network.
+        </p>
+        <p title="Az adatszegmensben egy portszám található, amely azonosítja az alkalmazást. A hozzáférési lista a következő információkat olvassa ki: a forráscím, a célcím és a protokoll típusa.">
+            In data segment, a port number can be found which identifies the application. The access list reads the following information: the source address, the destination address and the protocol type.
+        </p>
+        <p title="Problémák adódhatnak a hozzáférési listákkal. A hozzáférési listákkal kapcsolatos egyik leggyakoribb probléma a tervezés hiánya (tervezés hiánya). További problémás terület a szekvenciális jelleg (egymás utáni jelleg), amelyben a listát be kell írni a routerbe. Sok új hálózati adminisztrátor találja magát bajba, amikor egy útválasztóba telnet, és hozzáférési listát alkalmaz.">
+            You can have problems with access lists. One of the most common problems associated with access list is a lack of planning (tervezés hiánya). Another problematic area is the sequential nature (egymás utáni jelleg) in which you must enter the list into the router. Many new network administrators find themselves in trouble when they Telnet into a router and begin applying an access list.
+        </p>
+        <p title="Van néhány fontos szabály a listák eléréséhez. Először létre kell hozni a hozzáférési listát, majd lehet jelentkezni az interfészekre. A hozzáférési listák alkalmazhatók bejövő vagy kimenő forgalomra. A bejövő azt jelenti, hogy az irány a router felé irányul. Kimenő azt jelenti, hogy az irány az útválasztón kívül van. A bejövő ACL-ek csomagszűrésre alkalmasak, amikor meg kell vizsgálni a bejövő interfészre érkező csomagok egyetlen forráscímét. A kimenő ACL akkor jó, ha ugyanazt a szűrőt több bejövő csomagra alkalmazza, de az ugyanazon a felületen lévő kimenő csomagokra is.">
+            There are some important rules to access lists. At first you have to create the access list then you can apply to interfaces. The access lists can be applied to inbound or outbound traffic. Inbound means direction is into the router. Outbound means direction is out of the router. Inbound ACLs are good for packet filtering when you have to examine the only source address to the packets arriving at inbound interface. Outbound ACL is good if you apply the same filter to more several inbound packets but also the outbound packets on the same interface.
+        </p>
+        <p title="Vannak más hozzáférési listára vonatkozó szabályok is. Az útválasztók sorban alkalmazzák a listákat abban a sorrendben (olyan sorrendben), ahogyan beírod őket a routerbe. A forgalomirányítók szekvenciálisan (egymás után) listákat alkalmaznak a csomagokra. A csomagok feldolgozása csak egyezés (egyezés) létrejöttéig történik, majd a hozzáférési lista utasításaiban foglalt hozzáférési lista kritériumok alapján történik a cselekvés. Az implicit deny azt jelenti, hogy bármi blokkolja az összes olyan csomagot, amely nem felel meg a hozzáférési listák követelményeinek (követelmény), kivéve, ha a lista végén (hacsak nem) engedélyezi valamelyik parancsot. Az implicit tiltás nem engedélyez semmilyen forgalmat, ezért az ACL-ekben legalább egy engedélyező parancsra van szükség, különben az összes forgalom blokkolásra kerül.">
+            There are some other access list rules. Routers apply lists sequentially in the order (olyan sorrendben) in which you type them into the router. Routers apply lists to packets sequentially (egymás után). Packets are processed only until a match (egyezés) is made and then they are acted upon based on the access list criteria contained in access list statements. Implicit deny means that anything blocks all packets that do not meet requirements (követelmény) of the access lists unless (hacsak nem) permit any command is used at the end of the list. Implicit deny doesn’t permit any traffic, that’s why in ACLs you need at least one permitting command or else all traffic gets to blocking.
+        </p>
+
+        <p title="A hozzáférési listákat (vagy) bejövő vagy (vagy) kimenő forgalomszűrőként kell alkalmazni egy felületre. Egy interfészre protokollonként és irányonként csak egy lista alkalmazható. Egy hozzáférési listáról egyetlen sort sem távolíthat el. A hozzáférési listák alkalmazásuk után azonnal hatályba lépnek.">Access lists must be applied to an interface as either (vagy) inbound or (vagy) outbound traffic filters. Only one list, per protocol, per direction can be applied to an interface. You cannot remove one line from an access list. Access list are effective as soon as they are applied.</p>
+
+        <p title="Összességében a cégeknek hozzáférési listákra van szükségük ahhoz, hogy az avatatlanok (jogosulatlan) ne károsíthassák a weboldalakat.">All in all, companies need access lists in order that (azért, hogy) uninitiated (jogosulatlan) people can’t damage websites.</p>
+
+    </div>
+</body>
+</html>
