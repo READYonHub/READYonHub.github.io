@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+<title>18.tétel</title>
+<style>
+    body{
+        font-size:16px;
+        margin:0;
+        padding:0;
+    }
+    h1{
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+</style>
+</head>
+<body style="background-color: #2E8B57; ">
+    <div style="background-color: white; margin: 5% 20% 0 20%; text-indent: 5%; padding:0 3% 3% 3%;">
+        <h1>
+            18. Tétel <br />      Virtual LANs (Local Area Networks)- Virtuális helyi hálózatok
+        </h1>
+
+<p title="Informatikai mérnökként dolgozom egy rendszerintegrációs cégnél. Feladatunk egy kis- és középvállalkozás hálózati teljesítményének javítása. Szeretném elmagyarázni, hogyan működik az új hálózat virtuális LAN-okkal. Szólnék az új rendszer előnyeiről is.">I work as an IT engineer for a system integration company. Our task is to improve the network performance of a small/medium-sized enterprise. I would like to explain how the new network with virtual LANs works. I would also speak about the advantages of the new system.</p>
+<p title="A virtuális LAN egy logikai alhálózat, amely különböző fizikai LAN-okból származó eszközök gyűjteményét csoportosíthatja. A nagyobb üzleti számítógépes hálózatok gyakran VLAN-okat állítanak fel, hogy újraparticionálják hálózatukat a jobb forgalomkezelés érdekében. Számos különböző típusú fizikai hálózat támogatja a virtuális LAN-okat, beleértve az Ethernetet és a WI-Fi-t is.">A virtual LAN is a logical subnetwork that can group together a collection of devices from different physical LANs. Larger business computer networks often set up VLANs to re-partition their network for improved traffic management. Several different kinds of physical networks support virtual LANs including both Ethernet and WI- Fi.</p>
+
+<p title="- A VLAN-ok lehetővé teszik a rendszergazdáknak, hogy olyan tényezők alapján szegmentálják a hálózatokat, mint a funkció, a projektcsapat vagy az alkalmazás, függetlenül a felhasználó vagy az eszköz fizikai helyétől.">-VLANs allow an administrator to segment networks based on factors such as function, project team, or application, without regard for the physical location of the user or device.</p>
+
+<p title="- A VLAN-ok lehetővé teszik a hozzáférési és biztonsági szabályzatok megvalósítását a felhasználók meghatározott csoportjai szerint.">-VLANs enable the implementation of access and security policies according to specific groupings of users.</p>
+
+<p title="-A VLAN a 2. rétegű hálózat logikai partíciója.">-A VLAN is a logical partition of a Layer 2 network.</p>
+
+<p title="- Több partíció is létrehozható, lehetővé téve több VLAN egyidejű létezését.">-Multiple partitions can be created, allowing for multiple VLANs to co-exist.</p>
+
+<p title="-Minden VLAN egy broadcast tartomány, általában saját IP-hálózattal.">-Each VLAN is a broadcast domain, usually with its own IP network.</p>
+
+<p title="- A VLAN-ok kölcsönösen el vannak szigetelve, és a csomagok csak útválasztón keresztül tudnak áthaladni közöttük.">-VLANs are mutually isolated, and packets can only pass between them via a router.</p>
+
+<p title="- A Layer 2 hálózat particionálása egy Layer 2 eszközön belül történik, (általában) switchen keresztül.">-The partitioning of the Layer 2 network takes place inside a Layer 2 device, (usually) via a switch.</p>
+
+<p title="A VLAN-ok előnyei a következők:">Benefits of VLANs are the following:</p>
+<p title="- Fokozott biztonság; Csökkentett költség; Jobb teljesítmény; Kisebb műsorszórási tartományok; IT Hatékonyság; Menedzsment hatékonyság; Egyszerűbb projekt- és alkalmazáskezelés">-Improved security; Reduced cost; Better performance; Smaller broadcast domains; IT Efficiency; Management Efficiency; Simpler Project and Application Management</p>
+
+<p title="- Megfelelő beállítás esetén a virtuális LAN-ok javíthatják a forgalmas hálózatok általános teljesítményét."> -When set up correctly, virtual LANs can improve the overall performance of busy networks.</p>
+<p title="- A VLAN-ok célja az egymással leggyakrabban kommunikáló klienseszközök csoportosítása. A két vagy több fizikai hálózatra felosztott eszközök közötti forgalmat általában a hálózat központi útválasztóinak kell kezelniük, de a VLAN-nal a forgalom hatékonyabban kezelhető hálózati kapcsolókkal.">-VLANs are intended to group together client devices that communicate with each other most frequently. The traffic between devices split across two or more physical networks ordinarily needs to be handled by a network's core routers, but with a VLAN that traffic can be handled more efficiently by network switches instead.</p>
+<p title="- A VLAN-ok további biztonsági előnyökkel is járnak a nagyobb hálózatokon, mivel lehetővé teszik a nagyobb szabályozást, hogy mely eszközöknek van helyi hozzáférése egymáshoz. A Wi-Fi vendéghálózatokat gyakran olyan vezeték nélküli hozzáférési pontokkal valósítják meg, amelyek támogatják a VLAN-okat.">-VLANs also bring additional security benefits on larger networks by allowing greater control over which devices have local access to each other. Wi-Fi guest networks are often implemented using wireless access points that support VLANs.</p>
+
+<p title="VLAN trönkök">VLAN Trunks</p>
+<p title="-A VLAN trönk egy pont-pont kapcsolat, amely egynél több VLAN-t hordoz.">-A VLAN trunk is a point-to-point link that carries more than one VLAN.</p>
+<p title="-A VLAN trönk egy pont-pont kapcsolat, amely egynél több VLAN-t hordoz.">-A VLAN trunk is usually established between switches so same-VLAN devices can communicate, even if physically connected to different switches.</p>
+<p title="-A VLAN trönk nincs társítva egyetlen VLAN-hoz sem; a fővonali portokat sem használják a fővonali kapcsolat létrehozására.">-A VLAN trunk is not associated to any VLANs; neither is the trunk ports used to establish the trunk link.</p>
+<p title="- A Cisco IOS támogatja az IEEE802.1q-t, egy népszerű VLAN trönk protokollt.">-Cisco IOS supports IEEE802.1q, a popular VLAN trunk protocol.</p>
+<p title="Ethernet keretek címkézése a VLAN azonosításhoz">Tagging Ethernet Frames for VLAN Identification</p>
+<p title="- A keretcímkézés egy VLAN-azonosító fejléc hozzáadásának folyamata a kerethez.">-Frame tagging is the process of adding a VLAN identification header to the frame.</p>
+<p title="- Több VLAN keret megfelelő továbbítására szolgál egy fővonali kapcsolaton keresztül.">-It is used to properly transmit multiple VLAN frames through a trunk link.</p>
+<p title="- Váltsa a címkekereteket, hogy azonosítsa a VLAN-t, amelyhez tartoznak.">-Switches tag frames to identify the VLAN to which they belong.</p>
+<p title="- Különféle címkézési protokollok léteznek; Az IEEE 802.1Q nagyon népszerű példa.">-Different tagging protocol exist; IEEE 802.1Q is a very popular example.</p>
+<p title="-A protokoll meghatározza a kerethez hozzáadott címkéző fejléc szerkezetét.">-The protocol defines the structure of the tagging header added to the frame.</p>
+<p title="- A kapcsolók VLAN-címkéket adnak a keretekhez, mielőtt azokat a fővonali hivatkozásokba helyeznék, és eltávolítják a címkéket a keretek előtt a nem trönk portokon keresztül.">-Switches add VLAN tags to the frames before placing them into trunk links and remove the tags before frames through non-trunk ports.</p>
+<p title="-When properly tagged, the frames can transverse any number of switches via trunk links and still be forwarded within the correct VLAN at the destination.
+
+">-When properly tagged, the frames can transverse any number of switches via trunk links and still be forwarded within the correct VLAN at the destination.</p>
+<p title="(VLAN beállítása – Magas szinten a hálózati rendszergazdák az alábbiak szerint állítják be az új VLAN-okat:">(Setting up a VLAN-	At a high level, network administrators set up new VLANs as follows:</p>
+<p title="1. Válasszon egy érvényes VLAN-számot.">1.	Choose a valid VLAN number.</p>
+<p title="2. Válasszon egy privát IP-címtartományt az adott VLAN-on lévő eszközök számára.">2.	Choose a private IP address range for devices on that VLAN to use.</p>
+<p title="3. Állítsa be a kapcsolóeszközt statikus vagy dinamikus beállításokkal. A statikus konfigurációk megkövetelik, hogy az adminisztrátor VLAN-számot rendeljen minden kapcsolóporthoz, míg a dinamikus konfigurációk MAC-címek vagy felhasználói nevek listáját írják elő egy VLAN-számhoz.">3.	Configure the switch device with either static or dynamic settings.  Static configurations require the administrator to assign a VLAN number to each switch port while dynamic configurations require assigning a list of MAC addresses or user names to a VLAN number.</p>
+<p title="4. Szükség szerint konfigurálja a VLAN-ok közötti útválasztást. Két vagy több VLAN egymás közötti kommunikációra való konfigurálásához vagy egy VLAN-tudatos útválasztóra vagy egy Layer 3 switchre van szükség.)">4.	Configure routing between VLANs as needed. Configuring two or more VLANs to communicate with each other requires the use of either a VLAN-aware router or a Layer 3 switch.)</p>
+
+
+    </div>
+</body>
+</html>

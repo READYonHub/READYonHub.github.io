@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+<title>10.tétel</title>
+<style>
+    body{
+        font-size:16px;
+        margin:0;
+        padding:0;
+    }
+    h1{
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+</style>
+</head>
+<body style="background-color: #2E8B57; ">
+    <div style="background-color: white; margin: 5% 20% 0 20%; text-indent: 5%; padding:0 3% 3% 3%;">
+        <h1 title="10. tétel DHCP szerver konfigurálása VLAN-nal egy switchen">10. tétel<br />	Configuring a DHCP server with VLAN on a switch</h1>
+
+
+
+        <p title="Kisvállalkozásunk operatív vezetője vagyok. Kértél egy kis segítséget. Saját Windows-szerverünket használtuk a dokumentáció és az e-mailek tárolására, de most azt tervezzük, hogy lecseréljük a Cloud Service-re. Leállítjuk a Windows szervert, ezért más módot kell találnunk a dinamikus címszolgáltatás terjesztésére. A jövőben Cisco kapcsolót fogunk használni.">I am the operational manager of our small business. You asked me for some help. We have used our own Windows server for storing documentation and emails but now we are planning to replace it with Cloud Service. We are going to stop the Windows server, so we need to find another way of distributing the dynamic address service. In the future we will be using a Cisco switch.</p>
+
+        <p title="Tehát problémái vannak a kapcsoló konfigurálásával. Létre szeretne hozni egy VLAN-t (=virtuális LAN) és aktiválni a DHCP (Dynamic Host Control Protocol) szervert, így az ehhez a VLAN-hoz társított összes kapcsolóport automatikusan kap egy IP-címet a DHCP-kiszolgálótól.">So you have a problem while configuring a switch. You want to create a VLAN (=virtual LAN) and to activate the DHCP (Dynamic Host Control Protocol) server and so all switch ports associated to this VLAN will receive automatically an IP address from DHCP server.</p>
+
+        <p title="Kerestem a neten néhány információt, és találtam egy jó megoldást a Stack Overflow-ra. A következőket kell tennie:">I have searched the net for some information and found a good solution on Stack Overflow. You should do the following:</p>
+
+        <p title="VLAN-onként meg kell határoznia egy készletet, amelyben megadja a hálózat, az alapértelmezett útválasztó és a dns szerver tartományát. Ki kell rendelnie egy IP-címet a megfelelő tartományból.">You have to define one pool per VLAN, in which you give the range of the network, default-router and the dns server. You must assign an IP address from the appropriate range.</p>
+
+        <p title="-A) Belépünk a kapcsolóba és létrehozunk egy DHCP szerver szolgáltatást készletnévvel. Ezután konfiguráljuk ezt a szerverszolgáltatást. Először is meg kell adnia, hogy melyik hálózatról kíván címeket terjeszteni. Ezt követően hozzá kell adni a hozzá tartozó hálózati maszkot. Ezután meg kell adnia a számítógépek alapértelmezett átjáróját, hogy a számítógépek kommunikálni tudjanak más VLAN-okkal és az internettel. Ezenkívül meg kell adnia a dns-kiszolgáló szolgáltatást, hogy a számítógépek ne csak az IP-címmel lépjenek a web alapú tartománynévre. A VLAN-okat a switchen kell létrehozni, majd belép az al-interfészbe, és hozzáadja az IP-címet a VLAN-hoz. Aktiválnia kell az alinterfészt a „no shutdown” paranccsal.">-A) We enter the switch and create a DHCP server service with a pool name. Then we will configure this server service. First, you need to specify from which network you want to distribute addresses. After that, you must add the network mask belonging to it. Next, you must specify default gateway of the PCs so that the computers can communicate with other VLANs and the Internet. Also, you need to specify the dns server service to allow the PCs to go to the web based domain name not just with the IP address. The VLANs must be created on the switch, then you enter the sub-interface and you add the IP address to the VLAN. You must activate the sub-interface with the ‘no shutdown’ command.</p>
+
+        <p title="További megoldás a problémájára:">Further solution to your problem:</p>
+
+        <p title="B) Ha 3. rétegbeli kapcsolói vannak, ugyanúgy létrehozhat VLAN-okat, mint a második réteg kapcsolóival. A DHCP-kiszolgáló szolgáltatást azonban létre kell hoznia a kapcsolón, ahogyan az útválasztón is megteheti. Nevet kell adni a medencének. Ne felejtsen el olyan IP-címeket és hálózati maszkokat megadni a megfelelő VLAN-oknak, amelyeknek az adott hálózathoz kell tartozniuk a megfelelő készletekben. Lehetőség van bizonyos IP-címek kizárására, amelyeket más hálózati eszközöknek kézzel szeretnénk megadni, pl. hálózati nyomtató.">B) If you have layer 3 switches, you can create VLANs in the same way you could do it with the second layer switches. However, you must create the DHCP server service on the switch as you can do it as on the router. You have to give a name to the pool. Don’t forget to give such IP addresses and netmasks to the appropriate VLANs that should belong to the given network in the right pools. There is a possibility to exclude some IP addresses which we want to give to other network devices manually, e.g. a network printer.</p>
+
+
+
+        <p title="Meg kell határoznia két (vagy több) készletet, és meg kell adnia nekik ugyanazt az IP-tartományt, amelyet a VLAN-oknak adott. Működni fog.">You must define two pools (or more) and give them same range IP as you gave to your VLANs. It will work.</p>
+
+        <p title="A DHCP-t helyi szolgáltatásként kell megoldania. A többi szolgáltatást felhőszolgáltatásokba kell helyezni.">You must solve the DHCP as a local service. The other services should be put into cloud services.</p>
+
+        <p title="További információ a témához, de nem a feladathoz: Ha 2. rétegű kapcsolói vannak, akkor a kapcsolókon VLAN-okat kell létrehoznia, és a trönk portjaira kell csatlakoztatnia. A VLAN-okhoz hozzá kell rendelni a megfelelő kapcsolóportokat. Ezeket a parancsokat kell használnia: ‘Switchport mode access; switchport access vlanx’. Ezután csatlakoztassa az egyik kapcsolót az útválasztóhoz a fővonali porton keresztül. Ezt követően meghatározza az alinterfészeket a megfelelő VLAN-okhoz az útválasztó interfészén. Ezután beállíthatja a DHCP-szolgáltatásokat, minden VLAN-hoz egy készletet. (Mint a mellékleten is látható.)">Extra information relating to the topic but not to the task: If you have layer 2 switches, you must create VLANs on the switches and connect them on the trunk ports. You must assign the appropriate switch ports to the VLANs. You need to use these commands: ‘switchport mode access; switchport access vlanx’. Then, you connect one of the switches to the router through the trunk port. After, you define the subinterfaces to the appropriate VLANs on the router interface. Next, you can set the DHCP services, one pool to each VLAN. (As you can see it on the appendix.)</p>
+
+    </div>
+</body>
+</html>
