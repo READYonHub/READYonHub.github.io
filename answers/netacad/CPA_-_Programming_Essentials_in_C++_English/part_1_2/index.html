@@ -1,0 +1,965 @@
+﻿<!DOCTYPE html>
+
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>C++ Answer</title>
+    <link href="../kozos_css/css.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+    <div id="semmi">
+
+    </div>
+    <div>
+        <a title="Donation ITExam Answers" href="https://itexamanswers.net/donation"><i class="fa fa-paypal"></i>Donations</a>
+    </div>
+    <div class="tartalom">
+        <div>
+            <logo><crimson><b>READY</b></crimson><valasz><b>answer</b></valasz><linkem><b>.atw.hu</b></linkem></logo>
+        </div>
+        <div style="width:80%;margin-left:10%; margin-right:10%;margin-top:2%;">      
+            <div class="post-info" style="text-align:justify; ">
+                <i class="fa fa-calendar"></i>
+                <font style="vertical-align: inherit;"><altgr_plus_w>2021. Szep 3</altgr_plus_w> </font>
+                <i class="fa fa-refresh"><altgr_plus_w> Last Updated: 2022. June 8</altgr_plus_w></i>
+                <i class="fa fa-tags"></i> CPA - Programming Essentials in C++
+            </div>
+        </div>
+		<div>
+	<p style="text-align:center; font-size:140%;margin-bottom:0; padding-bottom:0;">		C++ Essentials - Part 1: STUDY RESOURCES :
+</p>
+		<p style="text-align:center; font-size:140%;">CPPE1: Module 2 Test</p>
+		</div>
+        <videom>
+            <p>Check out the solutions in a video:</p>
+            <iframe src="'videomlinke'autoplay=1&mute=1">
+            </iframe>
+        </videom>
+        <div id="kerdes">
+            <p><h3>1. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />              <br />
+                </kod>
+                <kod>
+                    int a = 1, b = 2;                                <br />   
+                </kod>
+                <kod>
+                    int c = a | b;                                <br />    
+                </kod>
+                <kod>
+                    int d = c & a;                                <br />   
+                </kod>
+                <kod>
+                    int e = d ^ 0;                                <br />    <br />
+                </kod>
+                <kod>
+                    cout << e << d << c;<br />
+                </kod>
+                <kod>
+                    return 0;                                <br />    <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+            <answer>
+                <ul>
+                    <li >100</li>
+                    <li>131</li>
+                    <li>031</li>
+                    <li id="correct_answer">113</li>
+                </ul>
+            </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>2. What is the value of the following snipet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    bool yes = !false;<br />
+                </kod>
+                <kod>
+                    bool no = !yes;<br /><br />
+                </kod>
+                <kod>
+                    if(!no)<br />
+                </kod>
+                <kod>
+                    cout << "true";<br />
+                </kod>
+                <kod>
+                    else<br />
+                </kod>
+                <kod>
+                    cout << "false"><br />
+                </kod>
+
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li id="correct_answer">true</li>
+                        <li>no</li>
+                        <li >false</li>
+                        <li>yes</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>3. What is the value of the following snipet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />              <br />
+                </kod>
+                <kod>
+                    int i = 3, j = 0;                                <br /><br />
+                </kod>
+                <kod>
+                    do {                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    i++;                               <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    j++;                              <br />
+                </kod>
+                <kod>
+                    } while(i >= 0);<br /><br />
+                </kod>
+                <kod>
+                    cout << j;                              <br />
+                </kod>
+                <kod>
+                    return 0;<br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>5</li>
+                        <li >3</li>
+                        <li>2</li>
+                        <li id="correct_answer">4</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>4. What is the value of the following snipet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />              <br />
+                </kod>
+                <kod>
+                    int a = 1, b = 2;                                <br />
+                </kod>
+                <kod>
+                    int c = a << b;                                <br />
+                </kod>
+                <kod>
+                    int d = 1 << c;                                <br />
+                </kod>
+                <kod>
+                    int e = d >> d;                                <br />    <br />
+                </kod>
+                <kod>
+                    cout << e;<br />
+                </kod>
+                <kod>
+                    return 0;                                <br />    <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>1</li>
+                        <li id="correct_answer">0</li>
+                        <li >4</li>
+                        <li>2</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>5. What is the value of the following snipet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />            
+                </kod>
+                <kod>
+                    int a = 2;                                <br />
+                </kod>
+                <kod>
+                    switch(a << a) {                                <br />
+                </kod>
+                <kod>
+                    case 8 : a++;                          <br />
+                </kod>
+                <kod>
+                    case 4 : a++;                               <br />  
+                </kod>
+                <kod>
+                    case 2 :break;  <br />
+                </kod>
+                <kod>
+                    case 1 : a--;                                 <br />    
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+                <kod>
+                    cout << a;<br />
+                </kod>
+                <kod>
+                    return 0;<br />
+                </kod>
+            </minta_kod>                
+                <answer>
+                    <ul >
+                        <li>2</li>
+                        <li >5</li>
+                        <li>3</li>
+                        <li id="correct_answer">4</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>6. What is the value of the following snipet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />
+                </kod>
+                <kod>
+                    int g[3][3] = {(2, 4, 8), (3, 6, 9,), (5, 10, 15)};                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                   for(int i = 2; i >= 0; i--)                         <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                    for(int j = 0; j < 3; j++)                         <br />
+                </kod>
+                <kod style="margin-left:30%;">
+                    g[i][j] += g[i][j];                     <br />
+                </kod>
+                <kod>
+                    cout << g[1][1];  <br />
+                </kod>
+                <kod>
+                    return 0;                              <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>               
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>6</li>
+                        <li id="correct_answer">12</li>
+                        <li >15</li>
+                        <li>9</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>7. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                   double big = 1e15;<br />
+                </kod>
+                <kod>
+                   double small = 1e-15;<br />
+                    <br />
+                </kod>               
+                <kod>
+                    cout << fixed << big + small;<br />
+                </kod>             
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li>0.0</li>
+                        <li>1000000000000000.0000000000000001</li>
+                        <li id="correct_answer">1000000000000000.000000</li>
+                        <li>1.01e15</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>8. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main() { <br />
+                </kod>               
+                <kod style="margin-left:15%;">
+                   float val = 100.0;                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                   do {                     <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                   val = val / 5;                        <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                   cout << "*";                    <br />
+                </kod>
+                <kod>
+                    } while(val > 1.0);  <br />
+                </kod>
+                <kod>
+                    return 0;                              <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li >**</li>
+                        <li>*****</li>
+                        <li id="correct_answer">***</li>
+                        <li>****</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>9.  What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    struct str {                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    int t[3]; <br />
+                </kod>
+                <kod>
+                    char s[3];<br />
+                </kod>
+                <kod>
+                    }; <br /><br />
+                </kod>
+                <kod>
+                    int main() { <br />
+                </kod>              
+                <kod style="margin-left:20%;">
+                   str a = { 1, 2, 3, 'a', 'b', 'c' };                                <br />
+                </kod>
+                <kod style="margin-left: 20%;">
+                    str b = { 5, 6, 7, 'x', 'y', 'z' };                                <br />
+                </kod>
+                <kod style="margin-left: 20%;">
+                  cout << char(b.s[0] + a.t[0]) << int(a.s[2] - a.s[0]) << endl;                    <br />
+                </kod>                
+                <kod style="margin-left: 20%;">
+                    return 0;                              <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>z22</li>
+                        <li >a11</li>
+                        <li id="correct_answer">y21</li>
+                        <li>b12</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>10. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main() { <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    for(float val = -10.0; val  < 100.0; val = -val *2);                                <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    cout << "*";   <br />
+                </kod>                
+                <kod style="margin-left:15%;">
+                    return 0;                              <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li id="correct_answer">**</li>
+                        <li>****</li>
+                        <li >***</li>
+                        <li>******</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>11. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />            
+                </kod>
+                <kod style="margin-left:15%;"> 
+                    int i = 5; j = 0;                                <br /><br />
+                </kod>
+                <kod style="margin-left:15%;">
+                   while(i > 0) {                                <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    i--;                               <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    j++;                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    }<br />
+                </kod>
+                <kod>
+                    cout << j;                              <br />
+                </kod>
+                <kod>
+                    return 0;<br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li>4</li>
+                        <li>2</li>
+                        <li id="correct_answer">5</li>
+                        <li >3</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>12.What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main() {<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    char arr[5] = {'a', 'b', 'c', 'd', 'e' };                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    for(int i = 1; i < 5; i++) {                                <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    cout << "*";                              <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    if ((arr[i] - arr[i - 1]) % 2;                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    continue;<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    cout << "*";                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    }<br />
+                </kod>
+                <kod style="margin-left:15%;"> 
+                    return 0;<br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li id="correct_answer">****</li>
+                        <li>*****</li>
+                        <li >********</li>
+                        <li>*******</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>13. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br />
+                </kod>
+                <kod>
+                    int main() {<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                   for(float val = -10.0; val < 100.0; val = -val * 2) {                                <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    if(val < 0 && -val >= 40)                                <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                    break;                              <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    cout << "*";                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    }<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    return 0;                              <br />
+                </kod>
+                <kod >
+                    }<br />
+                </kod>               
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li >****</li>
+                        <li>*****</li>
+                        <li id="correct_answer">**</li>
+                        <li>***</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>14.What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    int i = 0, j = i++; k = --i;<br />
+                </kod>
+                <kod>
+                    if(i > 0)                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    j++;<br />
+                </kod>
+                <kod>
+                    else                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    k++;                               <br />
+                </kod>
+                <kod>
+                    if(k == 0)                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    i++;                              <br />
+                </kod>
+                <kod>
+                    else if(k > 0)    <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    k--;                               <br />
+                </kod>
+                <kod>
+                    else                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    k++;                               <br />
+                </kod>
+                <kod>
+                    cout << i * j * k;<br />   
+                    </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li id="correct_answer">0</li>
+                        <li>-1</li>
+                        <li>1</li>
+                        <li >2</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>15. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br />
+                </kod>
+                <kod>
+                    int main() {<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                   int t[] = { 8, 4, 3, 2, 1 }. i;                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    for(i = t[4]; i < t[0]; i++)                               <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                   t[i - 1] = -t[3];                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    cout << i;                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    return 0;                              <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>The literal is invalid.</li>
+                        <li>6</li>
+                        <li id="correct_answer">26</li>
+                        <li>16</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>16.  What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    struct sct {<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    int t[2];                                <br />
+                </kod>
+                <kod>
+                    };                               <br />
+                </kod>
+                <kod>
+                    struct str {<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    sct t[2];                                <br />
+                </kod>
+                <kod>
+                    };                               <br />
+                </kod>
+                <kod>
+                    int main() {                          <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    str t[2] = { (0, 2, 4, 6), (1, 3, 5, 7) };                              <br />
+                </kod>
+                <kod>
+                    cout << t[1].t[0].t[1] << t[0].t[1].t[0];<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    return 0;                              <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+            <answer>
+                <ul>
+                    <li>43</li>
+                    <li>52</li>
+                    <li >25</li>
+                    <li id="correct_answer">34</li>
+                </ul>
+            </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>17.  What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    int i = 1, j = i++; k = --i;<br />
+                </kod>
+                <kod>
+                    if(i > 0)  {              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    j++;<br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    k++;                                <br />
+                </kod>
+                <kod>
+                    }                               <br />
+                </kod>
+                <kod>
+                    else {                           <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    k++;                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    i++;   <br />
+                </kod>
+                <kod>
+                    }                              <br />
+                </kod>
+                <kod>
+                    if (k == 0) {                                <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    i++;   <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    j++;<br />
+                </kod>
+                <kod>
+                    }                              <br />
+                </kod>
+                <kod>
+                    else {                           <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    if(k > 0)                           <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    k--;                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    else                            <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    k++;                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    i++;   <br />
+                </kod>
+                <kod>
+                    }                              <br />
+                </kod>
+                <kod>
+                    cout << i * j * k;                             <br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>2</li>
+                        <li>8</li>
+                        <li id="correct_answer">4</li>
+                        <li>0</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>18.  What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br />
+                </kod>
+                <kod>
+                    int main() {                          <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    int a [a] = {4, 0, 3, 1, 2};                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    int a [a] = {1, 2, 3, 4, 5};<br /><br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    for (int i = 0; i < 5; i++)                             <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    b[a[i]] = b[4 - i];                            <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    cout << b[0] << b[4];                             <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    return 0;                           <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li id="correct_answer">45</li>
+                        <li>51</li>
+                        <li>15</li>
+                        <li >54</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>19. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br />  <br />
+                </kod>
+                <kod>
+                    struct str {                         <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    int t[3];                              <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    char s[3];                              <br />
+                </kod>
+                <kod>
+                    };                             <br /><br />
+                </kod>
+                <kod>
+                    int main() {                           <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    str z[3];                             <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    for(int i = 0; i < 3; i++)                            <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                    for(int j = 0; j < 3; j++)                            <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                    z[i].s[j] = '0' + i + j;                           <br />
+                </kod>
+                <kod style="margin-left:25%;">
+                    z[j].t[i] = i + j;                           <br />
+                </kod>
+                <kod>
+                    }                             <br />
+                </kod>
+                <kod>
+                    cout << z[0].s[1] << z[1].t[2] << z[2].s[0];                            <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    return 0;                           <br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+            <answer>
+                <ul>
+                    <li>312</li>
+                    <li>123</li>
+                    <li>032</li>
+                    <li  id="correct_answer">132</li>
+                </ul>
+            </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>20. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br />
+                </kod>
+                <kod>
+                    int main() {                           <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    bool t[5];                            <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    for(int i = 0; i < 5; i++)                          <br />
+                </kod>
+                <kod style="margin-left:20%;">
+                    t[4 - i] = !(i % 2);                         <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    cout << t[0] && t[2];                          <br />
+                </kod>
+                <kod style="margin-left:15%;">
+                    return 0;                           <br />
+                </kod>
+                <kod >
+                   }                          <br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li id="correct_answer">1</li>
+                        <li >false</li>
+                        <li>0</li>
+                        <li>true</li>
+                    </ul>
+                </answer>
+        </div>
+    </div>
+</body>
+</html>

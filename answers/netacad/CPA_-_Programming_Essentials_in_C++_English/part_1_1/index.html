@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+
+<html lang="hu" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>C++ Answer</title>
+    <link href="../kozos_css/css.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link href="../kozos_css/css_fejezetek.css" rel="stylesheet" />
+</head>
+<body >
+    <div id="semmi">
+    </div>
+    <div>
+        <a title="Donation ITExam Answers" href="https://itexamanswers.net/donation"><i class="fa fa-paypal"></i>Donations</a>
+    </div>
+    <div class="tartalom">
+        <div>
+            <logo><crimson><b>READY</b></crimson><valasz><b>answer</b></valasz><linkem><b>.atw.hu</b></linkem></logo>
+        </div>
+        <div style="width:80%;margin-left:10%; margin-right:10%;margin-top:2%;">      
+            <div class="post-info" style="text-align:justify; ">
+                <i class="fa fa-calendar"></i>
+                <font style="vertical-align: inherit;"><altgr_plus_w>2021. Szep 3</altgr_plus_w> </font>
+                <i class="fa fa-refresh"><altgr_plus_w> Last Updated: 2022. June 8</altgr_plus_w></i>
+                <i class="fa fa-tags"></i> CPA - Programming Essentials in C++
+            </div>
+        </div>
+		<div>
+	<p style="text-align:center; font-size:140%;margin-bottom:0; padding-bottom:0;">		C++ Essentials - Part 1: STUDY RESOURCES :
+</p>
+		<p style="text-align:center; font-size:140%;">CPPE1: Module 1 Test</p>
+		</div>
+        <videom>
+            <p>Check out the solutions in a video:</p>
+            <iframe
+			src="https://www.youtube.com/watch?v=ADZOVX1FMYE&ab_channel=splash.mp3">
+            </iframe>
+        </videom>
+        <div id="kerdes">	
+            <p><h3>1. What is the value of the <kijelolt>i</kijelolt> variable?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    float x = 1.0 / 4.0; <br />
+                </kod>
+                <kod>
+                    int i = x;
+                </kod>
+            </minta_kod>
+            <answer>
+                <ul>
+                    <li id="correct_answer">0</>
+                    <li>0.33</li>
+                    <li>0.25</li>
+                    <li>1</li>
+                </ul>
+            </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>2. What is the value of the following literal?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    X10
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li>10</li>
+                        <li>2</li>
+                        <li id="correct_answer">The literal is invalid.</li>
+                        <li>16</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>3. What is the final value of the <kijelolt>k</kijelolt> variable?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    int i = 3, j, k;<br />
+                </kod>
+                <kod>
+                    if(i > 0) j = 2 + i * i;<br />
+                </kod>
+                <kod>
+                    if(i <= 0) j = 2 * i -1;<br />
+                </kod>                <kod>
+                    if(j >= 0) k = j % i + 2;<br />
+                </kod>
+                <kod>
+                    if(j < 0) k = i % j + 2;<br />
+                </kod>
+                <kod>
+                    if(k < 0) k = k % i % j;<br />
+                </kod>   
+                <kod>
+                    if(k >= 0) k = j % i % k;<br />
+                </kod>
+
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>0</li>
+                        <li id="correct_answer">2</li>
+                        <li>1</li>
+                        <li>3</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>4. What is the output of the following snippet if a digit <kijelolt>8</kijelolt> followed by <i>Enter</i> is entered though the keyboard?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;                <br /><br />
+                </kod>
+                <kod>
+                    int main()<br />
+                </kod>
+                <kod>
+                    {  <br />              <br />
+                </kod>
+                <kod>
+                    int i;                                <br />    <br />
+                </kod>
+                <kod>
+                    cin >> i;<br />
+                </kod>
+                <kod>
+                    cout << i << hex << i + i << oct << i;<br /><br />
+                </kod>
+                <kod>
+                    }<br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>8168</li>
+                        <li>8&#215;10010</li>
+                        <li id="correct_answer">81010</li>
+                        <li>810010</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>5. What is the value of the <kijelolt>x</kijelolt> variable?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    float x = 1. / 2. + 2. / 4.;
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>0.75</li>
+                        <li id="correct_answer">1.0</li>
+                        <li>0.25</li>
+                        <li>0.5</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>6. Which of the following strings represents a <u>legal</u> variable name?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    float x = 1. / 2. + 2. / 4.;
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>first literal is invalid</li>
+                        <li>1st_literal_is_invalid</li>
+                        <li id="correct_answer">first_literal_is_invalid</li>
+                        <li>#1_literal_is_invalid</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>7. What is the output of the following snippet?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br />
+                    <br />
+                </kod>
+                <kod>
+                    using namespace std;<br />
+                    <br />
+                </kod>
+                <kod>
+                    int main()<br /><br />
+                </kod>
+                <kod>
+                    {
+                    <br />
+                </kod>
+                <kod>
+                    int i = 3, j = ++i, k = ++i;<br />
+                </kod>
+                <kod>
+                    cout << k << j << i;<br />
+                </kod>
+                <kod>
+                    }
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li>543</li>
+                        <li>454</li>
+                        <li id="correct_answer">545</li>
+                        <li>345</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>8. What is the value of the <kijelolt>k</kijelolt> variable?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    int k = 1 % 2 + 4 % 2;
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul>
+                        <li id="correct_answer">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>0</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>9. Which of the following strings is a proper floating-point number (in the C++ language sense)?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    int k = 1 % 2 + 4 % 2;
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>E14</li>
+                        <li id="correct_answer">3.14</li>
+                        <li>3,14</li>
+                        <li>3_14</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>10. What is the value of the <kijelolt>k</kijelolt> variable?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    int i = 1;<br />
+                </kod>
+                <kod>int j = ++i;<br /></kod>
+                <kod>int k = j++;<br /></kod>
+
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li>0</li>
+                        <li>3</li>
+                        <li id="correct_answer">2</li>
+                        <li>1</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>11. What is the output of the following snippet if a digit <kijelolt>5</kijelolt> followed by <i>Enter</i> is entered through the keyboard?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    #include <a><</a>iostream><br /><br />
+                </kod>
+                <kod>
+                    using namespace std;<br />
+                    <br />
+                </kod>
+                <kod>
+                    int main()<br /><br />
+                </kod>
+                <kod>
+                    {
+                    <br />
+                </kod>
+                <kod>
+                    int i = 3, j = ++i, k = ++i;<br /><br />
+                </kod>
+                <kod>
+                    cin >> i;<br />
+                </kod>
+
+                <kod>
+                    cout << k + i << j  - i << i * i;<br />
+                </kod>  <kod>
+                    }
+                    <br />
+                </kod>
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li>10-545</li>
+                        <li>10125</li>
+                        <li>10545</li>
+                        <li id="correct_answer">10-125</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>12. What is the value of the following literal?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    0E1
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>0.01</li>
+                        <li>0.1</li>
+                        <li id="correct_answer">0</li>
+                        <li>The literal is invalid.</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>13. What is the output of the following snippet if a string 2.5 followed by <i>Enter</i> is entered through the keyboard?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    #include <a><</a>iostream><br />
+                    <br />
+                </kod>
+                <kod>
+                    using namespace std;<br />
+                    <br />
+                </kod>
+                <kod> int main()<br /> </kod>
+                <kod> { </kod>
+                <br />
+                <kod>  float x;<br /><br /> </kod>
+                <kod> cin >> x;<br /> </kod>
+                <kod>  cout << scientific << "x";<br /> </kod>
+                <kod>   } </kod>
+
+            </minta_kod>
+                <answer>
+                    <ul >
+                        <li id="correct_answer">x</li>
+                        <li>2.5E0</li>
+                        <li>0.25E1</li>
+                        <li>2.5</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>14. What is the value of the following literal?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    018
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>16</li>
+                        <li>2</li>
+                        <li>10</li>
+                        <li id="correct_answer">The literal is invalid.</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>15. What is the value of the following literal?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    0x1A
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>The literal is invalid.</li>
+                        <li>6</li>
+                        <li id="correct_answer">26</li>
+                        <li>16</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>16. Which of the following strings does <u>not</u> represent a valid variable name?</h3></p>       
+            <answer>
+                <ul >
+                    <li>aUTO</li>
+                    <li id="correct_answer">auto</li>
+                    <li>Auto</li>
+                    <li>AUTO</li>
+                </ul>
+            </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>17. What is the value of the following literal?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    010
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>10</li>
+                        <li>The literal is not valid.</li>
+                        <li id="correct_answer">8</li>
+                        <li>2</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>18. What is the value of the following literal?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod>
+                    -1e-1
+                </kod>
+                </minta_kod>
+                <answer>
+                    <ul >
+                        <li>The literal is not valid.</li>
+                        <li>-1.0</li>
+                        <li>-10.0</li>
+                        <li id="correct_answer">-0.1</li>
+                    </ul>
+                </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>19. Which of the following strings is a correct <u>integer</u> number (in the C++ language sense)?</h3></p>
+            
+            <answer>
+                <ul >
+                    <li>3E14</li>
+                    <li>3.14</li>
+                    <li id="correct_answer">3'14</li>
+                    <li>3,14</li>
+                </ul>
+            </answer>
+        </div>
+        <div id="kerdes">
+            <p><h3>20. Whis the final value of the <kijelolt>k</kijelolt> variable?</h3></p>
+            <minta_kod id="minta_kod">
+                <kod style="margin-left:8%;">
+                    int i = 3, j = 2, k = -1;
+                    <br /><br />
+                </kod>
+                <kod> if(i > 0) <br />
+                <kod style="margin-left:15%;">{</kod><br />    </kod>
+                <kod style="margin-left:20%;"> if(j <= 0) <br /></kod>
+                <kod style="margin-left:30%;">{<br />    </kod>
+                <kod style="margin-left:35%;"> if(k < 0)<br />    </kod>
+                <kod style="margin-left:35%;"> k++;<br />    </kod>
+                <kod style="margin-left:35%;"> if(k <= 0)<br />    </kod>
+                <kod style="margin-left:35%;"> k--;<br />    </kod>
+                <kod style="margin-left:30%;">  }<br />    </kod>
+                <kod style="margin-left:10%;">  if(i <= 0)<br />    </kod>
+                <kod style="margin-left:10%;">  i++;<br /></kod>
+                <kod style="margin-left:15%;">}<br /> <br /> </kod>
+              <kod>  if(i <= 0)<br />    </kod>
+              <kod>
+                  j++;<br />
+                  <br />
+              </kod>
+              <kod>  k = i + J + k;    </kod>
+
+            </minta_kod>
+                <answer>
+                    <ul>
+                        <li>6</li>
+                        <li id="correct_answer">5</li>
+                        <li>4</li>
+                        <li>3</li>
+                    </ul>
+                </answer>
+        </div>
+    </div>
+</body>
+</html>
