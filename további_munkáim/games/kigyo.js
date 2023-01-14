@@ -67,12 +67,14 @@ function update() {
     if (kigyo_X < 0 || kigyo_X > oszlopok*block_meret || kigyo_Y < 0 || kigyo_Y > sorok*block_meret) {
         jatek_vege = true;
         alert("Game Over");
+        location.reload();
     }
 
     for (let i = 0; i < kigyo_felulet.length; i++) {
         if (kigyo_X == kigyo_felulet[i][0] && kigyo_Y == kigyo_felulet[i][1]) {
             jatek_vege = true;
             alert("Game Over");
+            location.reload();
         }
     }
 }
