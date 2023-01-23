@@ -1,14 +1,14 @@
 var tomb = 
 [
-"vicc1","rosszavicc2","kegyetlenvicc3","hitetlenvicc4","felejthetetlenvicc5"
+"vicc1","rosszavicc2","kegyetlenvicc3","hitetlenvicc4","felejthetetlenvicc5",""
 ];
 
 var kepek = [
-    "0.png",
     "1.png",
     "2.png",
     "3.png",
-    "4.png"
+    "4.png",
+    "5.png"
 ]
 
 function vicc(){
@@ -18,7 +18,7 @@ console.log(vlt)
 
 document.getElementById("vicchelye").innerHTML=tomb[vlt]
 
-document.getElementById("vicckepek").src = kepek[vlt-1]
+document.getElementById("vicckepek").src = kepek[vlt]
 
 
 }
