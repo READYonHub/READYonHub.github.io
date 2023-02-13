@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:brown ;
+        }
+        .kozepre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kozepre">
+<canvas id="jatek" width="640" height="480" style="margin:auto"></canvas>
+    </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+  jatekosEgy = jatekosKetto = 40;
+  jatekosVonalVastagsag = 15; 
+  jatekosVonalMagassag = 100;
+  ballx = bally = 50;
+  labdaMeret = 6;
+  xvel = yvel = 10; //labda gyorsasság
+  score1 = score2 = 0;
+  aiSpeed = 12; //Másik játékos gyorsasság
+
+  window.onload = ()=> {
+    c = document.getElementById('jatek');
+    cc = c.getContext('2d');
+    cc.font = '50px Arial';
+    setInterval(update, 1000/30);
+    c.addEventListener('mousemove', (e)=> {
+      jatekosEgy = e.clientY-jatekosVonalMagassag/2 - 100;
+    });
+  }
+
+  function reset() {
+    ballx = c.width/2;
+    ballyx = c.height/2;
+    xvel = -xvel;
+    yvel = 3;
+  }
+
+  function update() {
+    ballx += xvel;
+    bally += yvel;
+
+    if (bally < 0 && yvel < 0) {
+      yvel = -yvel;
+    }
+
+    if (bally > c.height && yvel > 0) {
+      yvel = -yvel;
+    }
+
+    // Labda ball oldala
+    if (ballx < 0) {
+      if (bally > jatekosEgy && bally < jatekosEgy + jatekosVonalMagassag) {
+        xvel = -xvel;
+        deltaY = bally - (jatekosEgy + jatekosVonalMagassag/2);
+        yvel = deltaY*0.3;
+      } else {
+        score2++;
+        reset();
+      }
+    }
+
+    // Labda jobb oldala
+    if (ballx > c.width) {
+      if (bally > jatekosKetto && bally < jatekosKetto + jatekosVonalMagassag) {
+        xvel = -xvel;
+        deltaY = bally - (jatekosKetto + jatekosVonalMagassag/2);
+        yvel = deltaY*0.3;
+      } else {
+        score1++;
+        reset();
+      }
+    }
+
+    // masik játékos mozgása
+    if (jatekosKetto+jatekosVonalMagassag/2 < bally || jatekosKetto+jatekosVonalMagassag/2 < bally+10) {
+      jatekosKetto += aiSpeed;
+    }
+    if (jatekosKetto+jatekosVonalMagassag/2 > bally || jatekosKetto+jatekosVonalMagassag/2 > bally-10) {
+      jatekosKetto -= aiSpeed;
+    }
+
+    //háttér
+    cc.fillStyle = 'black';
+    cc.fillRect(0, 0, c.width, c.height);
+    //labda
+    cc.fillStyle = '#CCCCFF';
+    cc.fillRect(ballx-labdaMeret/2, bally-labdaMeret/2, labdaMeret, labdaMeret);
+    //játékos 1
+    cc.fillStyle = 'cyan';
+    cc.fillRect(0, jatekosEgy, jatekosVonalVastagsag, jatekosVonalMagassag);
+    //pont 1
+    cc.fillText(score1, 100, 50);
+    //játékos 2
+    cc.fillStyle = 'lime';
+    cc.fillRect(c.width-jatekosVonalVastagsag, jatekosKetto, jatekosVonalVastagsag, jatekosVonalMagassag);
+    //pont 2
+    cc.fillText(score2, c.width-140, 50);
+  }
+</script>
