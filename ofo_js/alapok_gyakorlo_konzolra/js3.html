@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tomb = []
+        var paros = 0
+        for (let i =1;i<11;i++){
+        var randomszam = Math.floor(Math.random() * 10) + 1
+
+        tomb.push(randomszam)
+
+        }
+
+        console.log(tomb)
+
+        for (let j of tomb) {
+            if (j%2==0){
+                paros++
+            }
+        }
+        console.log(paros)
+
+        var legk = 999999
+        for(const i of tomb){
+            if(i<legk){
+                legk = i
+            }
+        }
+        console.log("Legkisebb: ",legk)
+
+        var osszes = 0
+        for(g of tomb){
+            osszes += g
+        }
+        console.log(osszes/tomb.length)
+    </script>
+</body>
+</html>

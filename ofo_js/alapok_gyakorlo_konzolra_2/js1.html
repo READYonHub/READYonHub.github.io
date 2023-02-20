@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Adj meg egy számot</p>
+    <input type="text" id="szam">
+    <br>
+    <button onclick="kiirat()">Kiíratás</button>
+<span id="kimenet"></span>
+
+<script>
+    function kiirat(){
+
+        var sz=""
+var szam = document.getElementById("szam").value
+   for (let i = 1; i < parseInt(szam)+1;i++){
+       console.log(i)
+   }
+   var kimenet = document.getElementById("kimenet").innerHTML=sz
+}
+</script>
+</body>
+</html>

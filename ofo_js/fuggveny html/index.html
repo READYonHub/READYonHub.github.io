@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function osszead(szam1, szam2)
+        {
+            return szam1 + szam2;
+        }
+        //-----------------------
+        function sokkarakterek(szam, karakter)
+        {
+            let sz="";
+            for (let i = 0; i <szam; i++)
+            {
+                sz+=karakter
+            }
+            return sz;
+        }
+function szamol(bemenet)
+{
+
+    var osszeg = 0;
+    for (let elem of bemenet.toString())
+    {
+        osszeg += parseInt(elem);
+    }
+    return osszeg;
+}
+    function osszegzes()  {
+        let osszeg = 0;
+        for (let elem of arguments) 
+        {
+            osszeg += elem;    
+        }
+        return osszeg;
+    }
+    function legnagyobb()  {
+        let osszeg = 0;
+        let legnagyobbik = 0;
+        for (let elem of arguments) 
+        {
+            if (legnagyobbik < elem)
+            {
+                legnagyobbik = elem
+            }    
+        }
+        return legnagyobbik;
+    }
+    function paros_paratlan()
+    {
+        var paros_tomb = [];
+        for (const elem of szamos_tomb)
+        {
+            if(elem % 2 == 0)
+            {
+                paros_tomb.push(elem);
+            }
+        }
+        return paros_tomb;
+    }
+    var leggkisebbikfuggveny = function()
+    {
+        var kicsi = 99e3;
+        for (let elem of arguments)
+        {
+            if (elem < kicsi)
+            {
+                kicsi = elem
+            }
+        }
+        return kicsi;
+    }
+    var szemely = {
+        "vnev":"Kiss",
+        "knev":"Szándokán",
+        "teljesnev":function(){
+            return this.vnev + " " + this.knev;
+        }
+    }
+
+
+    let szamos_tomb  =  [11,22,33,44,55,6,7,8,9];
+        //----------------------------------
+        console.log(osszead(2,3));
+        console.log(sokkarakterek(5,"s"));
+        console.log(szamol(123342));
+        console.log(osszegzes(5,4,3,1));
+        console.log(legnagyobb(11,22,3,44,55))
+        console.log(paros_paratlan(szamos_tomb))
+        console.log(leggkisebbikfuggveny(11,22,33,44,123,42));
+        console.log(szemely.teljesnev())
+    </script>
+</body>
+</html>

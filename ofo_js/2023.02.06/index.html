@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Add meg az első számot</p><br>
+    <input type="text" id="szam1">
+    <p>Add meg a második számot</p><br>
+    <input type="text" id="szam2"><br>
+    <button onclick="szamol()">Számol</button><br>
+    <span id="kiiras"></span>
+
+    <script> 
+        function szamol()
+        {
+            if (document.getElementById("szam1").value == "" || document.getElementById("szam2").value == "")
+            {
+                document.getElementById("kiiras").innerHTML = "Mindkét számot meg kell adni!"
+            }
+            else
+            {
+            var sz1 = parseInt(document.getElementById("szam1").value);
+            var sz2 = parseInt(document.getElementById("szam2").value);
+             if (sz1 >  sz2)
+             {
+                 document.getElementById("kiiras").innerHTML = sz1;
+             }
+             else
+             {
+                document.getElementById("kiiras").innerHTML = sz2;
+             }
+            }
+
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+1. 
+Kérj be egy számot Weblapról pl. 55 és gombnyomásra írasd ki addig a határig 1-tõl 
+a számokat weblapra, egymás mellé szóközzel elválasztva!
+
+2. 
+Kérj be két számot Weblapról, két beviteli mezõvel, gombnyomásra 
+írasd ki a nagyobbat a gomb alá!
+Ha a két mezõ üres, akkor írja ki azt!
+
+3.
+Random tömb, 1 és 10 közötti számokkal, 10 db,
+és írasd ki Weblapra a random számokat egymás alá felsorolásba: ul-li
+
+4. 
+JSON tömb: tanuló neve, ösztöndíja , programban adjuk meg a tömböt
+Írassuk ki Weblapra a tanulók nevét, ösztöndíját, táblázatba.
+Kérjünk be beviteli mezõben egy nevet, gombnyomásra írja ki alá annak a 
+tanulónak az ösztöndíját!

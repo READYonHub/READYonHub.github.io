@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #desszertek{
+        color: blue;
+    }
+</style>
+<body>
+    
+<div id="desszertek"></div>
+
+<div id="cukrázda"></div>
+
+<table id="tablazat">
+
+</table>
+
+<script>
+
+let desszertek = ["Tiramisu","Panna cotta","Csokoládétorta","Almás pite","Crème brûlée","Banánkenyér","Málna sorbet",
+"Mézeskalács","Túrógombóc","Sacher torta"];
+let ol = document.createElement("ol");
+
+for (let elem of desszertek) {
+    let li = document.createElement("li");
+    li.innerHTML = elem
+    ol.appendChild(li);
+}
+document.getElementById("desszertek").appendChild(ol)
+
+let cukrazda = [
+    {"neve":"neve111","ara":111},
+    {"neve":"neve222","ara":222},
+    {"neve":"neve333","ara":333},
+    {"neve":"neve444","ara":444},
+    {"neve":"neve555","ara":555},
+    {"neve":"neve666","ara":666},
+    {"neve":"neve777","ara":777},
+    {"neve":"neve888","ara":888},
+    {"neve":"neve999","ara":999},
+    {"neve":"neve1010","ara":1010}
+]
+
+for (let i = 0; i < cukrazda.length; i++) {
+    let     
+}
+</script>
+</body>
+</html>
