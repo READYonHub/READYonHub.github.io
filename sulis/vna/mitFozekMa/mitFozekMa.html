@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta neve="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mit főzek ma?</title>
+
+<style>
+body {
+  font-family: papyrus;
+  margin: 0;
+  padding: 0;
+  background-color: #c2d1e5;
+  color: #2e3d49;
+  text-shadow: 1px 1px 2px #d3d3d3;
+
+}
+header {
+  background-color: #f2c06d;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #2e3d49;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: #2e3d49;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #d3d3d3;
+}
+
+button:hover {
+  background-color: #f2c06d;
+  color: #2e3d49;
+}
+.középre {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#neve {
+  font-size: 30px;
+  margin: 10px 0;
+}
+#kep {
+  display: block;
+  margin: 20px auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+#elkeszitesiIdo, #kaloriak {
+  margin: 10px 0;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="középre">
+      <h2 id="neve"></h2>
+      <img id="kep" >
+      <form>
+        <button type="button" onclick="veletlenKaja()">
+          Mit főzek ma?
+        </button>
+      </form>
+      <p id="elkeszitesiIdo"></p>
+      <p id="kaloriak"></p>
+  </div>
+
+  
+
+  <script>
+        kajaTomb = [
+  {
+    "neve": "Milánói makaróni",
+    "kep": "kepek/1.jpg",
+    "elkeszitesiIdo": 60,
+    "kaloriak": 400
+  },
+  {
+    "neve": "Gulyásleves",
+    "kep": "kepek/2.jpg",
+    "elkeszitesiIdo": 120,
+    "kaloriak": 150
+  },
+  {
+    "neve": "Csirkemell rizottó",
+    "kep": "kepek/3.jpg",
+    "elkeszitesiIdo": 45,
+    "kaloriak": 300
+  },
+  {
+    "neve": "Túrós tészta",
+    "kep": "kepek/4.jpg",
+    "elkeszitesiIdo": 30,
+    "kaloriak": 250
+  },
+  {
+    "neve": "Sült krumpli",
+    "kep": "kepek/5.jpg",
+    "elkeszitesiIdo": 40,
+    "kaloriak": 200
+  },
+  {
+    "neve": "Rántott csirkemell",
+    "kep": "kepek/6.jpg",
+    "elkeszitesiIdo": 30,
+    "kaloriak": 350
+  },
+  {
+    "neve": "Bolognai spagetti",
+    "kep": "kepek/7.jpg",
+    "elkeszitesiIdo": 45,
+    "kaloriak": 450
+  },
+  {
+    "neve": "Paradicsomos mozzarella saláta",
+    "kep": "kepek/8.jpg",
+    "elkeszitesiIdo": 15,
+    "kaloriak": 200
+  },
+  {
+    "neve": "Töltött káposzta",
+    "kep": "kepek/9.jpg",
+    "elkeszitesiIdo": 90,
+    "kaloriak": 250
+  },
+  {
+    "neve": "Lencsefőzelék",
+    "kep": "kepek/10.jpg",
+    "elkeszitesiIdo": 60,
+    "kaloriak": 150
+  }
+]
+
+  function veletlenKaja()
+  {
+    let veletlenKep = Math.floor(Math.random() * kajaTomb.length);
+    let velKaja = kajaTomb[veletlenKep];
+    let kajaNev = document.getElementById("neve");
+    let kajaKep = document.getElementById("kep");
+    let elkeszitesiIdo = document.getElementById("elkeszitesiIdo");
+    let kajaKaloriak = document.getElementById("kaloriak");
+
+    kep.width = "400";
+    kep.height = "400";
+    kajaKep.classList.add("img-fluid");
+
+    kajaNev.textContent = velKaja.neve;
+    kajaKep.src = velKaja.kep;
+    elkeszitesiIdo.textContent = "Elkészítési idő: " + velKaja.elkeszitesiIdo + " perc";
+    kajaKaloriak.textContent = "Kalóriatartalom: " + velKaja.kaloriak + " kcal/100g";
+  }
+    </script>
+</body>
+</html>
