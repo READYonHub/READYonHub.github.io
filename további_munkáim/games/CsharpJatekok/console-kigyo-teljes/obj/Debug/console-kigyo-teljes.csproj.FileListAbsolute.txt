@@ -1,0 +1,8 @@
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\bin\Debug\console-kigyo-teljes.exe.config
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\bin\Debug\console-kigyo-teljes.exe
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\bin\Debug\console-kigyo-teljes.pdb
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\obj\Debug\console-kigyo-teljes.csproj.AssemblyReference.cache
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\obj\Debug\console-kigyo-teljes.csproj.SuggestedBindingRedirects.cache
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\obj\Debug\console-kigyo-teljes.csproj.CoreCompileInputs.cache
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\obj\Debug\console-kigyo-teljes.exe
+C:\Users\READY\Desktop\sajatok\console-kigyo-teljes\obj\Debug\console-kigyo-teljes.pdb
