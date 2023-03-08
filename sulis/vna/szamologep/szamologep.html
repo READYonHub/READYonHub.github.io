@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="format.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <form id="szamologep">
+        <h1>Számológép</h1>
+        <input type="text" id="kijelzo" class="calculator__output" readonly value="0">
+        <br>
+        <div class="calculator__keys">
+        <input type="button" class="gomb calculator__key" value="7" onclick="beszamjegy(7)">
+        <input type="button" class="gomb calculator__key" value="8" onclick="beszamjegy(8)">
+        <input type="button" class="gomb calculator__key" value="9" onclick="beszamjegy(9)">
+        <input type="button" class="gomb calculator__key calculator__key--operator" value="/" onclick="muveletvegzes(4)">
+
+        <input type="button" class="gomb calculator__key" value="4" onclick="beszamjegy(4)">
+        <input type="button" class="gomb calculator__key" value="5" onclick="beszamjegy(5)">
+        <input type="button" class="gomb calculator__key" value="6" onclick="beszamjegy(6)">
+        <input type="button" class="gomb calculator__key calculator__key--operator" value="*"  onclick="muveletvegzes(3)"> 
+
+        <input type="button" class="gomb calculator__key" value="1" onclick="beszamjegy(1)">
+        <input type="button" class="gomb calculator__key" value="2" onclick="beszamjegy(2)">
+        <input type="button" class="gomb calculator__key" value="3" onclick="beszamjegy(3)">
+        <input type="button" class="gomb calculator__key calculator__key--operator" value="-"  onclick="muveletvegzes(2)">   
+
+        <input type="button" class="gomb calculator__key calculator__key--operator" value="+-">
+        <input type="button" class="gomb calculator__key" value="0" onclick="beszamjegy(0)">
+        <input type="button" class="gomb calculator__key calculator__key--operator" value=",">
+        <input type="button" class="gomb calculator__key calculator__key--operator" value="+" onclick="muveletvegzes(1)">
+        
+        <input type="button" class="gomb calculator__key calculator__key--enter" value="=">
+        <input type="button" class="gomb calculator__key" value="c">
+
+        <br>
+        <p></p>
+</form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+</head>
+<body>
+    <div id="tolt">
+<img src="/102854-snake-line-loading-animation.gif" alt="">    
+</div>
+<script>
+
+fetch("https://raw.githubusercontent.com/kodecocodes/recipes/master/Recipes.json")
+.then(x => x.json())
+.then(y => megjelenik(y));
+
+function megjelenik(adat)
+{
+    console.log(adat);
+    let db = 0
+    let sz = ""
+    sz += '<select onchange="valtoztat()">'
+    adat.forEach(elem => {
+        sz += '<option value="'+db+'">'
+        sz += elem.name
+        sz += '</option>'
+        db += 1
+    });
+    sz += '</select>'
+
+    document.getElementById("tolt").innerHTML = sz
+}
+function valtoztat(){
+    alert("yeaj")
+}
+</script>
+
+</body>
+</html>
