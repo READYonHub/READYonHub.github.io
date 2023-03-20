@@ -1,0 +1,8 @@
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\bin\Debug\visszaszamolos.exe.config
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\bin\Debug\visszaszamolos.exe
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\bin\Debug\visszaszamolos.pdb
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\obj\Debug\visszaszamolos.csproj.AssemblyReference.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\obj\Debug\visszaszamolos.csproj.SuggestedBindingRedirects.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\obj\Debug\visszaszamolos.csproj.CoreCompileInputs.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\obj\Debug\visszaszamolos.exe
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\visszaszamolos\obj\Debug\visszaszamolos.pdb

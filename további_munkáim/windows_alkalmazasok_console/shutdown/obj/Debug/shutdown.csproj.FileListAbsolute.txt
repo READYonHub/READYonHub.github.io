@@ -1,0 +1,11 @@
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\bin\Debug\shutdown.exe.config
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\bin\Debug\shutdown.exe
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\bin\Debug\shutdown.pdb
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.csproj.AssemblyReference.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.csproj.SuggestedBindingRedirects.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.Form1.resources
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.Properties.Resources.resources
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.csproj.GenerateResource.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.csproj.CoreCompileInputs.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.exe
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\baross\sajatok\shutdown\obj\Debug\shutdown.pdb
