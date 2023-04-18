@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valutaváltó</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Valutaváltó</h1>
+        <div class="row">
+            <div class="col">
+                <select class="penzvaltas">
+                    <option>Válasz pénznemet</option>
+                </select>
+                <input type="text" name="" id="be_penz">
+            </div>
+            <div class="col">
+                <select class="penzvaltas">
+                    <option>Válasz pénznemet</option>
+                </select>
+                <input type="text" name="" id="ki_penz" disabled>
+            </div>
+        </div>
+        <button onClick="Váltás()">Váltás</button>
+    </div>
+
+    <script>
+        var valasztas = document.querySelectorAll(".penzvaltas"),
+            be_penz = document.getElementById('be_penz'),
+            ki_penz = document.getElementById('ki_penz');
+
+        fetch(`https://api.frankfurter.app/currencies`)
+            .then((data) => data.json())
+            .then((data) => {
+                const entries = Object.entries(data); //penznem és ország pénze
+                //console.log(data)
+                for (var i = 0; i < entries.length; i++) {
+                    valasztas[0].innerHTML += `<option value="${entries[i][0]}">${entries[i][0]}</option>`;
+                    valasztas[1].innerHTML += `<option value="${entries[i][0]}">${entries[i][0]}</option>`;
+                }
+            });
+
+        function Váltás() {
+            be_penz_val = be_penz.value;
+            if (valasztas[0].value != valasztas[1].value) {
+                const host = 'api.frankfurter.app';
+                fetch(`https://${host}/latest?amount=${be_penz_val}&from=${valasztas[0].value}&to=${valasztas[1].value}`)
+                    .then((val) => val.json())
+                    .then((val) => {
+                        ki_penz.value = Object.values(val.rates)[0]
+                        console.log(Object.values(val.rates)[0])
+                    });
+            }
+        }
+
+    </script>
+</body>
+
+</html>
