@@ -1,0 +1,16 @@
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\bin\Debug\01GridLayout.exe.config
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\bin\Debug\01GridLayout.exe
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\bin\Debug\01GridLayout.pdb
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.csproj.AssemblyReference.cache
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.csproj.SuggestedBindingRedirects.cache
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\MainWindow.g.cs
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\App.g.cs
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout_MarkupCompile.cache
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout_MarkupCompile.lref
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\MainWindow.baml
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.g.resources
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\_01GridLayout.Properties.Resources.resources
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.csproj.GenerateResource.cache
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.csproj.CoreCompileInputs.cache
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.exe
+C:\Users\READY\Desktop\Kártyajáték XAML és C# használatával (classic)\01\01GridLayout\obj\Debug\01GridLayout.pdb

@@ -1,0 +1,59 @@
+﻿<Window x:Class="_01GridLayout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01GridLayout"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Height="334" VerticalAlignment="Bottom">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="158*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="135*"/>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="322*"/>
+        </Grid.ColumnDefinitions>
+       
+        <!--Ez egy megjegyzés, csak a forráskódban látszik,
+        a program futására nincs semmilyen befolyása-->
+        
+        <!--Mivel itt nem adtam meg sor és oszlopindexet
+        És a <Grid></Grid> között vagyok, tehát a grid tartalma
+        ezt a gombot. Vagyis-->
+        <Button />
+        
+        <!--A C# gyűjteményeket 0-val kezdődően indexel, így a 0.sor
+        0. oszlop az valójában az első sor és első oszlopot jelöli.-->
+        
+        <!--Ez a második sor második oszlopba helyezi
+        a gombot
+        <Button Grid.Column="1" Grid.Row="1"/>-->
+        <!--Ez a gomb pedig a 0.indexű (vagyis első) sorba
+        és mivel megadtuk, ezért az 1. indexű (vagyis második)
+        oszlopba kerül-->
+        <Button Grid.Column="1"/>
+
+        <Button Grid.Column="2"/>
+
+        <!--Ez a gomb pedig, mivel megadtuk,
+        az 1. indexű (vagyis a második) sorba kerül, és mivel
+        nem adtuk meg, így 0. indexű (vagyis első)
+        oszlopba kerül-->
+        <Button Grid.Row="1"/>
+        
+        <Button Grid.Row="2"/>
+        
+        <!--Itt pedig mindkét paramétert megadjuk-->
+
+        <Button Grid.Row="1" Grid.Column="1"/>
+        <Button Grid.Row="1" Grid.Column="2"/>
+
+        <Button Grid.Row="2" Grid.Column="1"/>
+        <Button Grid.Row="2" Grid.Column="2"/>
+
+    </Grid>
+</Window>
