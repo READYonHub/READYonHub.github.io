@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-c#_tanulóFa",
+      "appliesTo": "c#_tanulóFa/",
+      "type": "launch"
+    }
+  ]
+}
