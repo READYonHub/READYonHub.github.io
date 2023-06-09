@@ -1,0 +1,10 @@
+Cél egy komoly C# fullstack fejlesztõi gyakorlat megélése,
+ehhez végig viszek egy fejlesztõi projektet, ennek a projektnek a célja tehát,
+egy éles vagy másnéven egy produkciós alkalmazás elkészitése.
+Elkésziteni teljesen nem fogom tudni, de egy prototipust a legfontosabb döntésekkel megépitek.
+Ehhez mint minden rendes C# .NET fejlesztõ késziteni kell egy GitHub kódtárat.
+A kódtárhoz nevet kell választani, így a titkok nagy része egybõl napfényre tör.
+Az alkalmazás tanulással kapcsolatos lesz amit épitek.
+Generáltatok egy üres README állományyt a GitHubbal, Visual Studiot fogunk használni, ezért a
+szûrõ állományt is ennek megfelelõen fogjuk beállitani, egyébként pedig, mivel nyilvános ez a kódtár 
+MIT Licence-el látjuk el majd létrehozzuk a kódtárunkat.
