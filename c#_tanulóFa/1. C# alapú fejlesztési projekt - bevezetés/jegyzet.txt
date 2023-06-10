@@ -1,0 +1,190 @@
+﻿
+
+## 1.1 A projekt célja, kódtár létrehozása
+
+	Cél egy komoly C# fullstack fejlesztői gyakorlat megélése,
+	ehhez végig viszek egy fejlesztői projektet, ennek a projektnek a célja tehát,
+	egy éles vagy másnéven egy produkciós alkalmazás elkészitése.
+	Elkésziteni teljesen nem fogom tudni, de egy prototipust a legfontosabb döntésekkel megépitek.
+	Ehhez mint minden rendes C# .NET fejlesztő késziteni kell egy GitHub kódtárat.
+	A kódtárhoz nevet kell választani, így a titkok nagy része egyből napfényre tör.
+	Az alkalmazás tanulással kapcsolatos lesz amit épitek.
+	Generáltatok egy üres README állományyt a GitHubbal, Visual Studiot fogunk használni, ezért a
+	szűrő állományt is ennek megfelelően fogjuk beállitani, egyébként pedig, mivel nyilvános ez a kódtár 
+	MIT Licence-el látjuk el majd létrehozzuk a kódtárunkat.
+
+## 1.2 Clone, vscode
+	
+	Most néhány alapvető döntést meg kell hozni, de ugyanilyen fontos az,
+	hogy a döntéseinket úgyanugy dokumentáljuk is. A dokumentációhoz és az első az első gondolatokhoz 
+	kiváló segédeszköszt használunk a Visual Studio Code-ot (VSC). 
+	Nem csak Windows-on, hanem linux és MacOS-en is elkérhető. 
+	Továbbiakhoz a GitHubon lévő létehozott kódtárat,
+	néhány egyzserű mozdulattal letükrözzük a fejlesztői gépünkre.
+	A GitHub mögött Git forráskód követő dolhgozik,
+	így nagy örümönkre egyszerű Git parancssokat tudunk használni. 
+	Kell a kódtár internetes cime, amit a zöld gomb segitségével előhivunk.
+	Majd pedig a másolóval bemásolunk a vágólapunkra. 
+	Átváltunk paracssorba és készitünk egy élethű változatot, vagyis Clone-ozunk.
+	felüle a fájlkezelőben az aktuális mappában ahová klónozni akarunk beírjuk, hogy CMD -> Enter.
+	A CMD vagyis konzolra begépeljük git clone Ctrl+V , vagyis a klózni akart githubos cimet.
+	Enter, lefút a clone, az így létrehozott könyvtárba belépünk cd _neveAKönvyátnak_ és elinditjuk
+	a VSC-ket a code . segitségével. Láthatjuk a kódtárunk tartalmár és
+	láthatjuk a .gitugnore állományt ami szűri azokat a állományokat ami nem amit nem fogunk a kódtárba
+	fel küldeni. Van a LICENCE fájllünk ami valóban egy MIT Licence
+	és a README.md amit valóban a GitHUb készített nekünk, egyenlőre üresen.
+
+## 1.3 Alapvetések
+
+	Most lefogjuk szűrni a szöglet zászlóinkat, hogy megtudjuk meddig is tarrt a pálya.
+	Ehhez alapvetéseket fogunk rögziteni. Az alapvetéseink célja, hogy egyértelmü alapokat
+	biztosítson a döntéseinkhez, hogy eltudjuk dönteni, hol vagyunk? merre szertnénk menni?
+	meddig megyünk? vagyis mi az amit megcélzunk és mi az amit nem a munkánkkal.
+	Nézzük az alapvetéseket. 
+	Az első alapvetés az hogy olyan technológiát használunk, amit jelenleg profi programozóként, 
+	profi programozók is használnak.
+	Ennek az összefoglaló neve a .NET core, amit a későbbiekben jól körül fogunk járni.
+	Röviden C# nyelven tudunk programozni nagyon sok elérhető platformra Linux-ra, MacOS-re,
+	mobiltelefonokra és így tovább.
+	A következő alapvetésünk, hogy olyan eszközöket használunk, amit a profi programozók is használnak.
+	A harmadik alapvetésünk, hogy egy olyan feladatot választunk, ami már létezik és már körbejárható 
+	annak érdekében, hogy az elképzeléssekkel és az előzetes tervekkel ne veszítsünk időt, hogy a 
+	gyakorlatra tudjunk koncentrálni.
+	A negyedik alapvetésünk, a tervet úgy készítjük, hogy később tovább fejleszthető legyen.
+
+## 1.4 Vázlat
+
+	A hasonlatot folytatva a szöglet zászlók után itt az ideje, az alapvonal és a középvonal felrajzolására
+	a kezdőkörrel valamit a kapuk felállitására. Vagyis vázlatot fogunk rajzolni.
+	A vázlatunk a következő, az elsődleges célunk egy  webalkalmazás készítése MWC környezetben.
+	Ennek a webalkalmazásnak az első logikus továbbfejlesztési célja ezután majd, egy olyan web API készítése
+	ami közé teszi az adatokat és elérhetővé teszi az uzleti logikát is, ez a web API-t is MWC környzetben érdemes
+	érdemes megszerkeszteni. Természetesen ahhoz, hhogy webapit készítsünk, ahhoz néhány technológiai feladatot 
+	meg kell majd a egfelelő időben oldanunk. És ha megvan a web API-nk akkor innentől kezdve háromfelé 
+	minimum elágazhat a továbbfejlesztési lehetőségek iránya:
+	az első irány egy desktop alkalmazás készítése (WPF) köörnyzetben,
+	a következő lehetséges és értelmes irány egy mobil alkalmazás készítése a webAPira alapozva (Xamarin).
+	és a harmadik irány, egy single page készítése, ami szintén ezt a webAPI-t mozgatja (Brazor).
+	Ehhez szerencsére C# nyelvű programozóként lehetőségünk lesz mald Blazor környezetet használni.
+	Most elég csak annyit tudni, hogy a Blazor egy webeskeretrentszer single page alkalmazások készítéséhez,
+	ami c# nyelvű webalkalmazást futtat a böngésző segitségével.
+
+## 1.5 Terv
+	
+	Itt az ideje a pályán a többi vonal megrajzolásához és a labda előkeritéséhez is.
+	Feladat tehát egy webalkalmazás készítése MWC alapokonm,
+	a webalkalmazásunk feladata és így a fejlesztés célja is első körben az,
+	hogy készítsünk egy oktató webalkalmazást.
+	Ehhez a webalkalmazáshoz elsősorban oktatók tudnak csatlakozni, akik tanfolyamokat tudnak létrehozni,
+	feltölteni és így tovább, másrészről pedig hallgatók tudnak hozzá csatlakozni,
+	akik az így elkészített tanfolyamokat tudják majd elvégezni. Miért jó ez a feladat? 
+	Ez azét jó ez a feladat, mert ez egy jó áttekinthető feladat létező megvalósítássai vannak a világban,
+	ugyanakkor kellően összetett feladat ahhoz, hogy a fullstack c# fejlesztés eszközeivel behatóan megismerkedjünk.
+
+
+## 2.1 A kezdeti rossz megoldás
+
+	Haladjunk tovább és gondolkozzunk el az aélakmazásunk felépitéséről.
+	Az egészen biztos, hogy minden ne, triviális alkalmazás az adatokat használ, amit két használat között
+	felejthetetlenné tesz, tehát elment valahogyan. ezeket ennél szebben rezisztens adatoknak vagy 
+	prezisztens adattárolásnak hivjuk. Tehát biztos, hogy az adatokkal valamit kezdenünk kell.
+	Általában az adatokat kiszolgálásáért és manipulálásáért felelős alkalmazást
+	közös néven adatbázisnak hivjuk. így minden további megkötés nélkül mondhatjuk azt, hogy az alkalmazásunknak
+	kell egy adatbázis. A következő feladat, hogy ha elindulunk a másik irányból az a felhasználónka a felülete,
+	az a webes felület. 	
+
+
+         DB                         MVC WebApp
+      ┌───────────┐            ┌────────────────────────────────┐
+      │           │            │                                │
+      │           ├─────────►  ├┬───────┐  ┌──────────┐  ┌─────┬┤
+      │           │            ││EF     │  │Controller│  │View ││
+      │           │ ◄──────────┼│Modell ▼  │          │  │     ││
+      │           │            │┼───────┐  ├──────────┤  ├─────┼│
+      └───────────┘            └────────┴──┴──────────┴──┴──────┘
+
+
+
+	Ugye az MWC világban a modell view controller hármazásban gondolkodva
+	és az entity framework-öt megismerve nagyon erős a kisértés, hogy kis tulzással az adatbázis
+	gyakorlatilag ami az entity framework-ből van generálva, tehát szinonimaként is gondolhatunk rá,
+	ő legyena  webalakalmazásunknak a modellje és akkor már csak a kontrollert. ls a view-t kell létrehizni.
+	Hát ez lenne a kezdő arhitekturam azonban az egy nagy kérdés, hogy akkor a webAPI-t azt it thová tudnánk tenni
+	valahogy mégis csak ebből a modellből kéne a webAPI-nak is dolgoznia, de akkor mi lenne az üzleti logikával,
+	kezdésnek ez a felépités nem jó, de nem is rossz.
+
+
+## 2.2 Javított architektúra, még mindig nem elég jó
+
+	
+     DB                  EF Model                     MVC WebApp
+   ┌─────────────┐      ┌───────────────────┐        ┌──────────┬─┬─────────┬─┬────────┐
+   │             │      │                   │        │┼─────────┤ ├─────────┤ ├───────┼│
+   │             ├─────►│                   ├───────►├│View     │ │         │ │View   ││
+   │             │      │                   │        ││Model    │ │Controller │       ││
+   │             │      │                   │        ││         │ │         │ │       ││
+   │             │ ◄────┤                   │◄───────┼│         │ │         │ │       ││
+   │             │      │                   │        │┼─────────┤ ├─────────┤ ├───────┼│
+   └─────────────┘      └───────────────────┘        └──────────┴─┴─────────┴─┴────────┘
+
+
+	Mivel az API-nak is hozzá kell férnie az adatokhoz, ezért gondolkodhatunk úgy, hogy az EF modell-t
+	(Entity Framework modell-ét), azt külön kezeljük ő ugyis a DB-vel (Adatbázissal) szinonim fogalmak
+	tehát ezt ő itt megoldja azt adatbázst létrehozást, és így tovább. Vagy az adatbázisbóé generáljuk 
+	le az EF modellt majd a későbbiekben eldöntjük és (EF modell) ő lesz az a adatbázis szolgáltató rész
+	, ami adatokat szolgáltat az MVC web alkalmazásnak, ebben az esetben a modellünket (MVC WebApp), ami 
+	az MVC-ben van hivhatjuk akár View Modell-nek is, hiszen a megjelenitéshez szükséges adatmodellről van szó
+	és akkor az EF Modell szolgáltatja az adatbázis adatokat. Ebben az esetben az API-t az EF Modellhez tudnánk
+	kötni, ezzel viszont az a baj, hogy az összes lekérdezést a kontroller futatná vagy a View, akkor
+	ebben a WebApp-ban lennénk azok a dolgok, amitől az alkalmazásunk müködik, tehát ő mondja meg, hogy mit szürünk 
+	az adatokból, milyen táblákba irunk, milyen táblákból olvasunk. Ha csak az adatokat szolgáltatjuk,
+	akkor a WebApp-nak a Controller-ben meg a View-ban lévő logikai részt azt megkéne ismételni-e, tehát 
+	meg kéne dupláznia, ez megint nem egy tökéletes architektura.
+
+## 2.3 Architektúra végleges - amit készíteni fogunk
+
+	
+
+    DB                   Repository                Service         MVC WebApp
+ ┌──────────────┐      ┌──────────────────┐       ┌─────────┐    ┌───────────────────────────────┐
+ │              │      │                  │       │         │    │                               │
+ │              │      │ ┌───────┐        │       │         │    ├┬─────────┬┬───────────┬┬─────┬┤
+ │              ├─────►│ │       │        ├──────►│         │◄───┼┘         ││           ││     ││
+ │              │      │ │EF     │        │       │         │    │   View   ││           ││     ││
+ │              │      │ │Model  │        │◄──────┤         ├───►├┐  Model  ││Controller ││View ││
+ │              │◄─────┤ │       │        │       │         │    ││         ││           ││     ││
+ │              │      │ ├───────┤        │       │         │    │┼─────────┼┼───────────┼┼─────┼│
+ └──────────────┘      └─┴───────┴────────┘       └─────────┘    └───────────────────────────────┘
+
+
+	Lépjünk egyet tovább és gondoljuk végig, hogy mit lehetne csinnálni az adatokkal,
+	ugye az adatoknak az a szokása, hogy valamilyen módon szürjük őket vagy megcimezzük őket azonosítóval
+	valamilyen módon lekérdezzük őket, illetve módosítjuk, rögzirjük, töröljük őket, hogy ha ezeket
+	adatmanipulációban és lekérdezéssel összefüggő dolgokkal bezárjuk egy nagyobb egységbe, és mondjuk 
+	elnevezzük Repositorynak akkor biztosak lehetünk benne abban, hogy az összes lekérdezéssel kapcsolatos
+	és lekérdezés definició kapcsolatos részt be tudjuk zárni egy dobozba.
+	Azonban ez viszont még mindig nincsen rendben,
+	hiszen hogy ha ehhez a repository-hoz csatlakoztatnánk az API-nkat, 
+	akkor az üzleti logikáról még mindig lemaradnánk. Ezért egy második dobozba szervezzük ki
+	az alkalmazásunkból azokat a részeket, amik már nem ilyen nyers adatmanipulációk, hanem a különböző táblák
+	vagy különböző adatbázisok, különböző szolgáltatásokat összehangolásával foglalkoznak, és ők azok amik
+	valójában az üzleti logikát kezeli, nevezzük ezt a dobozt Service-nek. 
+	És ha ezt a négy dobozt meg tudjuk határozni, akkor létrehozhatunk egy olyan architekturát, ami egyrészt
+	moduláris, tehát ezeket a részeket (DB, Repository, Service, MVC WebApp) akár külön is lecserélhetjük,
+	másrészt pedig az API-nkat, akár külön is lecserélhetjük, másrészt pedig az API-nkat közvetlenül ebbe 
+	a Service-be is be tudjuk csatlakoztani és a Service-n keresztül hozzáférhetünk majd mindenhez, amit
+	a MVC WebApp amit most fogunk irni tudd. Tehát architechturális szempontból ez a négy doboz lesz az a
+	feladat aminek most a létrehozását majd megcélozzuk. Következő kérdés, hogy ezek a dobozok önállóan
+	miért lesznek felelősek?
+
+## 3.1 Intro
+
+	A dobozok feladatainál, felelőségi körénél hagyydtuk abba, nézzük csak. Na de mi van az objektumokka?
+	Célunk egy olyan modell, amire még néhány objektumorientált model tervezési alapszabály is igaz.
+	Nézzünk néhány definiciót ehhez.
+
+## 3.2 Definiciók - low coupling
+
+	Első definiciónk legyen a csatolás, majd ezt felhasználva a gyenge csatolás fogalma.
+	Csatolás alatt azt értjük, hogy két elem függőségben van egymástól vagy hogy ha egy elem függőségben
+	van egy másik elemtől, akkor ezek az elemek csatolásban vannak, ez a definició. 
