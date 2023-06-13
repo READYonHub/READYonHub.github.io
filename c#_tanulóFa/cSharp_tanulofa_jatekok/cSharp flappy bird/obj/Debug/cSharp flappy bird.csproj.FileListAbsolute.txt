@@ -1,0 +1,8 @@
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\bin\Debug\cSharp flappy bird.exe.config
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\bin\Debug\cSharp flappy bird.exe
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\bin\Debug\cSharp flappy bird.pdb
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\obj\Debug\cSharp flappy bird.csproj.AssemblyReference.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\obj\Debug\cSharp flappy bird.csproj.SuggestedBindingRedirects.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\obj\Debug\cSharp flappy bird.csproj.CoreCompileInputs.cache
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\obj\Debug\cSharp flappy bird.exe
+C:\Users\kaszonyi.krisztian\Desktop\Kaszonyi Krisztián\polska FB\cSharp flappy bird\obj\Debug\cSharp flappy bird.pdb
