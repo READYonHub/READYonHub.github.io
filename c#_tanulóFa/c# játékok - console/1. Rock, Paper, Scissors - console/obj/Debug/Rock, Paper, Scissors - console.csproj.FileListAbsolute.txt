@@ -1,0 +1,8 @@
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\bin\Debug\Rock, Paper, Scissors - console.exe.config
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\bin\Debug\Rock, Paper, Scissors - console.exe
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\bin\Debug\Rock, Paper, Scissors - console.pdb
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\obj\Debug\Rock, Paper, Scissors - console.csproj.AssemblyReference.cache
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\obj\Debug\Rock, Paper, Scissors - console.csproj.SuggestedBindingRedirects.cache
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\obj\Debug\Rock, Paper, Scissors - console.csproj.CoreCompileInputs.cache
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\obj\Debug\Rock, Paper, Scissors - console.exe
+C:\Users\READY\Desktop\dolgozz rajta just for fun\Rock, Paper, Scissors - console\obj\Debug\Rock, Paper, Scissors - console.pdb
